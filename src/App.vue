@@ -10,7 +10,7 @@ import Stepper from './components/Stepper.vue';
 const data = ref(null)
 
 const fetchData = async () => {
-  const res = await fetch(`./data/content.json?v=${new Date().getTime()}`)
+  const res = await fetch(`portfolio-v2/data/content.json?v=${new Date().getTime()}`)
   data.value = await res.json()
 }
 
