@@ -22,9 +22,9 @@ onMounted(async () => {
 
 <template>
   <div v-if="data">
-    <div>
+    <!-- <div>
       <Stepper class="overview-stepper" />
-    </div>
+    </div> -->
     <div>
       <Splash :about="data.about" />
       <About :about="data.about" />

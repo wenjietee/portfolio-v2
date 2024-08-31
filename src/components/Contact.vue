@@ -6,6 +6,16 @@ const props = defineProps({
 
 <template>
     <div class="container">
-        Contact
+        <div class="grid">
+            <div class="col-12 text-6xl font-semibold text-center">Let's Work / Collab!</div>
+
+            <div class="col-12 text-3xl font-semibold text-center">
+                <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
+            </div>
+
+            <div v-for="social in contact.socials" class="col-12 flex flex-row flex-wrap" id="socials">
+                <a :href="social.url" class="flex align-items-center text-3xl font-semibold">{{ social.name }}</a>
+            </div>
+        </div>
     </div>
 </template>

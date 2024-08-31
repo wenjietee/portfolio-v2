@@ -7,6 +7,6 @@ const props = defineProps({
 
 <template>
     <div class="container">
-        Projects
+        <div class="col-12 text-6xl font-semibold text-center">Projects</div>
     </div>
 </template>

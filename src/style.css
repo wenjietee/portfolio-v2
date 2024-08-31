@@ -1,14 +1,17 @@
 :root {
+  /* Fonts */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   font-synthesis: none;
+  /* Colors */
+  color: #F7F4F2;
+  background-color:#1A1B1D;
+  /* Utils */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 body {
   margin: 0;
@@ -22,15 +25,33 @@ body {
   height: 100vh;
 }
 
+#app{
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-
+/* Splash */
 #splash-name{
   font-size: 10vw;
 
 }
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
 
+/* About */
+
+.chip{
+  min-width:90px;
+}
+
+#profile-pic{
+	width: 25em;
+	height: 25em;
+	object-fit: cover;
+	border-radius: 50%;
+	padding: 2em;
+
+}
+
+#skills,#socials{
+width: 10em;
 }

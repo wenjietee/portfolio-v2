@@ -1,16 +1,126 @@
 {
-
-    "about":{
-        "name":"Tee Wenjie",
-        "title":"Full-Stack Web Developer",
-        "about-me":""
+    "about": {
+        "name": "Tee Wenjie",
+        "title": "Full-Stack Web Developer",
+        "headline": "I build full stack web applications",
+        "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
+        "portrait": "portfolio-v2/media/portrait/profile.jpg",
+        "skills": [
+            "ReactJS",
+            "NodeJS",
+            "ExpressJS",
+            "Typescript",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "SQL",
+            "MongoDB",
+            "Git",
+            "Jenkins"
+        ]
     },
-    "projects":[],
-    "experience":[],
-    "experiments":[],
-    "contact":{
-        "github":"https://github.com/wenjietee",
-        "linkedin":"https://www.linkedin.com/in/teewenjie",
-        "email":"wenjietj@gmail.com"
+    "experience": [
+        {
+            "name": "Software Development Engineer",
+            "company": "NTT Data Inc",
+            "period": "Sep 2021 - Present",
+            "description": "Full-stack Typescript developer for Armed Forces Enterprise Safety Information System (ESIS) integrated with Safe Guardian Mobile Application for the SAF consolidation and analysis of Safety Incidents.",
+            "achievements": [
+                "\"Recognition for Excellence\" was awarded by the company for proactive leadership in organizing and advancing projects and achieving successful outcomes.",
+                "Revamped the development of new ETL workflows, leading to a 50% increase in issue resolution and workflow creation efficiency improved by 25%.",
+                "Developed and delivered Email Management features which are used across all branches of the Armed Forces enabling efficient email broadcasting for many modules residing in ESIS"
+            ],
+            "tech": [
+                "ReactJS",
+                "Express",
+                "NodeJS",
+                "Typescript",
+                "Javascript",
+                "Oracle Database",
+                "Jenkins",
+                "Informatica"
+            ]
+        },
+        {
+            "name": "Terrain Engineer",
+            "company": "ST Engineering",
+            "period": "Nov 2017 - Sep 2021",
+            "description": "",
+            "achievements": [
+                "Led a team of three 3D modellers in 2020 to deliver and integrate multiple large-scale 3D terrains",
+                "Created procedural modelling scripts to build and automate processes to scale terrain production from 1km sq to 5km sq.",
+                "Initiated changes in asset workflow such as an asset management system, which led to an improvement of production time by 1/3."
+            ],
+            "tech": ["3Ds Max", "Photoshop", "C++", "Unity3D", "MAXScript"]
+        },
+        {
+            "name": "Software Engineering Student",
+            "company": "General Assembly",
+            "period": "Nov 2020 - Jun 2021",
+            "description": "Building strong foundational knowledge in full-stack web development using modern stacks and frameworks.",
+            "achievements": [],
+            "tech": [
+                "ReactJS",
+                "Express",
+                "NodeJS",
+                "Javascript",
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Food Nomad",
+            "description": "",
+            "images": [
+                "portfolio-v2/media/fn/fn-app-main.jpg",
+                "portfolio-v2/media/fn/fn-app-map.jpg",
+                "portfolio-v2/media/fn/fn-login.jpg"
+            ],
+            "repo": "https://github.com/wenjietee/food-nomad",
+            "url": "https://food-nomad.onrender.com/",
+            "tech": ["Javascript", "Express", "NodeJS", "EJS", "HTML", "CSS"]
+        },
+        {
+            "name": "Missile Command",
+            "description": "",
+            "images": [
+                "portfolio-v2/media/mc/mc-1.jpg",
+                "portfolio-v2/media/mc/mc-2.jpg",
+                "portfolio-v2/media/mc/mc-3.jpg"
+            ],
+            "repo": "https://github.com/wenjietee/missile-command",
+            "url": "https://wenjietee.github.io/missile-command/",
+            "tech": ["Javascript", "HTML", "CSS"]
+        },
+        {
+            "name": "What's My GST",
+            "description": "",
+            "images": [],
+            "repo": "https://github.com/wenjietee/whats-my-gst",
+            "url": "https://wenjietee.github.io/whats-my-gst/",
+            "tech": ["Javascript", "HTML", "CSS", "JQuery"]
+        },
+        {
+            "name": "Pokegotchi",
+            "description": "",
+            "images": [],
+            "repo": "https://github.com/wenjietee/pokegotchi",
+            "url": "https://wenjietee.github.io/pokegotchi/#",
+            "tech": ["Javascript", "HTML", "CSS", "JQuery"]
+        }
+    ],
+    "contact": {
+        "email": "wenjietj@gmail.com",
+        "socials": [
+            { "name": "Github", "url": "https://github.com/wenjietee" },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/teewenjie"
+            }
+        ]
     }
 }

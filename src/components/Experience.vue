@@ -1,5 +1,5 @@
 <template>
     <div class="container">
-        Experience
+        <div class="col-12 text-6xl font-semibold text-center">Experience</div>
     </div>
 </template>
