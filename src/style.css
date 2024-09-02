@@ -52,6 +52,18 @@ body {
 
 }
 
-#skills,#socials{
+#skills,#socials,#tech{
 width: 10em;
 }
+
+#projects{
+  width:25em;
+}
+
+/* Project */
+.project-preview{
+  width: 250px;
+  height: 150px;
+	object-fit: cover;
+}
+

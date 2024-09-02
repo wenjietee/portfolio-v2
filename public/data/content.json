@@ -5,6 +5,7 @@
         "headline": "I build full stack web applications",
         "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
         "portrait": "portfolio-v2/media/portrait/profile.jpg",
+        "resume": "",
         "skills": [
             "ReactJS",
             "NodeJS",
@@ -36,7 +37,8 @@
                 "NodeJS",
                 "Typescript",
                 "Javascript",
-                "Oracle Database",
+                "SQL",
+                "Oracle DB",
                 "Jenkins",
                 "Informatica"
             ]
@@ -45,7 +47,7 @@
             "name": "Terrain Engineer",
             "company": "ST Engineering",
             "period": "Nov 2017 - Sep 2021",
-            "description": "",
+            "description": "Specialise in creating and automating large scale detailed environments for simulators using 3Ds Max and Unity",
             "achievements": [
                 "Led a team of three 3D modellers in 2020 to deliver and integrate multiple large-scale 3D terrains",
                 "Created procedural modelling scripts to build and automate processes to scale terrain production from 1km sq to 5km sq.",
@@ -74,11 +76,12 @@
     "projects": [
         {
             "name": "Food Nomad",
-            "description": "",
+            "description": "Food Nomad is an app that advocates the sharing of recipes, lifehacks and excess ingredients within individuals in an effort to reduce food waste.",
+            "preview": "portfolio-v2/media/fn/fn-login.png",
             "images": [
-                "portfolio-v2/media/fn/fn-app-main.jpg",
-                "portfolio-v2/media/fn/fn-app-map.jpg",
-                "portfolio-v2/media/fn/fn-login.jpg"
+                "portfolio-v2/media/fn/fn-login.png",
+                "portfolio-v2/media/fn/fn-app-main.png",
+                "portfolio-v2/media/fn/fn-app-map.png"
             ],
             "repo": "https://github.com/wenjietee/food-nomad",
             "url": "https://food-nomad.onrender.com/",
@@ -86,7 +89,8 @@
         },
         {
             "name": "Missile Command",
-            "description": "",
+            "description": "A browser based game inspired by the 1980 Atari arcade classic.",
+            "preview": "portfolio-v2/media/mc/mc-2.jpg",
             "images": [
                 "portfolio-v2/media/mc/mc-1.jpg",
                 "portfolio-v2/media/mc/mc-2.jpg",
@@ -98,16 +102,18 @@
         },
         {
             "name": "What's My GST",
-            "description": "",
-            "images": [],
+            "description": "A progressive web app (PWA) for calculating GST and service charge in Singapore.",
+            "preview": "portfolio-v2/media/wmg/wmg-1.jpg",
+            "images": ["portfolio-v2/media/wmg/wmg-1.jpg"],
             "repo": "https://github.com/wenjietee/whats-my-gst",
             "url": "https://wenjietee.github.io/whats-my-gst/",
             "tech": ["Javascript", "HTML", "CSS", "JQuery"]
         },
         {
             "name": "Pokegotchi",
-            "description": "",
-            "images": [],
+            "description": "A Tamagotchi game based on Pokémon sprites.",
+            "preview": "portfolio-v2/media/pgc/pgc-1.png",
+            "images": ["portfolio-v2/media/pgc/pgc-1.png"],
             "repo": "https://github.com/wenjietee/pokegotchi",
             "url": "https://wenjietee.github.io/pokegotchi/#",
             "tech": ["Javascript", "HTML", "CSS", "JQuery"]

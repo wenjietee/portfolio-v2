@@ -29,7 +29,7 @@ onMounted(async () => {
       <Splash :about="data.about" />
       <About :about="data.about" />
       <Experience :experience="data.experience" />
-      <Projects :projects="data.projects" :experiments="data.experiments" />
+      <Projects :projects="data.projects" />
       <Contact :contact="data.contact" />
     </div>
 
