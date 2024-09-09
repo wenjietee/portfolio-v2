@@ -4,7 +4,7 @@
         "title": "Full-Stack Web Developer",
         "headline": "I build full stack web applications",
         "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
-        "portrait": "portfolio-v2/media/portrait/profile.jpg",
+        "portrait": "/portfolio-v2/media/portrait/profile.jpg",
         "resume": "",
         "skills": [
             "ReactJS",
@@ -77,11 +77,11 @@
         {
             "name": "Food Nomad",
             "description": "Food Nomad is an app that advocates the sharing of recipes, lifehacks and excess ingredients within individuals in an effort to reduce food waste.",
-            "preview": "portfolio-v2/media/fn/fn-login.png",
+            "preview": "/portfolio-v2/media/fn/fn-login.png",
             "images": [
-                "portfolio-v2/media/fn/fn-login.png",
-                "portfolio-v2/media/fn/fn-app-main.png",
-                "portfolio-v2/media/fn/fn-app-map.png"
+                "/portfolio-v2/media/fn/fn-login.png",
+                "/portfolio-v2/media/fn/fn-app-main.png",
+                "/portfolio-v2/media/fn/fn-app-map.png"
             ],
             "repo": "https://github.com/wenjietee/food-nomad",
             "url": "https://food-nomad.onrender.com/",
@@ -90,11 +90,11 @@
         {
             "name": "Missile Command",
             "description": "A browser based game inspired by the 1980 Atari arcade classic.",
-            "preview": "portfolio-v2/media/mc/mc-2.jpg",
+            "preview": "/portfolio-v2/media/mc/mc-2.jpg",
             "images": [
-                "portfolio-v2/media/mc/mc-1.jpg",
-                "portfolio-v2/media/mc/mc-2.jpg",
-                "portfolio-v2/media/mc/mc-3.jpg"
+                "/portfolio-v2/media/mc/mc-1.jpg",
+                "/portfolio-v2/media/mc/mc-2.jpg",
+                "/portfolio-v2/media/mc/mc-3.jpg"
             ],
             "repo": "https://github.com/wenjietee/missile-command",
             "url": "https://wenjietee.github.io/missile-command/",
@@ -103,8 +103,8 @@
         {
             "name": "What's My GST",
             "description": "A progressive web app (PWA) for calculating GST and service charge in Singapore.",
-            "preview": "portfolio-v2/media/wmg/wmg-1.jpg",
-            "images": ["portfolio-v2/media/wmg/wmg-1.jpg"],
+            "preview": "/portfolio-v2/media/wmg/wmg-1.jpg",
+            "images": ["/portfolio-v2/media/wmg/wmg-1.jpg"],
             "repo": "https://github.com/wenjietee/whats-my-gst",
             "url": "https://wenjietee.github.io/whats-my-gst/",
             "tech": ["Javascript", "HTML", "CSS", "JQuery"]
@@ -112,8 +112,8 @@
         {
             "name": "Pokegotchi",
             "description": "A Tamagotchi game based on Pokémon sprites.",
-            "preview": "portfolio-v2/media/pgc/pgc-1.png",
-            "images": ["portfolio-v2/media/pgc/pgc-1.png"],
+            "preview": "/portfolio-v2/media/pgc/pgc-1.png",
+            "images": ["/portfolio-v2/media/pgc/pgc-1.png"],
             "repo": "https://github.com/wenjietee/pokegotchi",
             "url": "https://wenjietee.github.io/pokegotchi/#",
             "tech": ["Javascript", "HTML", "CSS", "JQuery"]
