@@ -1,5 +1,7 @@
 <template>
-    <div class="container">
-        Game
-    </div>
+    <section id="game">
+        <div class="container">
+            Game
+        </div>
+    </section>
 </template>

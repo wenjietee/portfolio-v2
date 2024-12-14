@@ -1,16 +1,22 @@
-:root {
+:root{
   /* Fonts */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
   /* Colors */
-  color: #F7F4F2;
-  background-color:#1A1B1D;
+  color: #313945;
+  background-color:#F0F0F0;
   /* Utils */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.menubar-background{
+  background-color:#F0F0F0;
+}
+html { 
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -23,6 +29,7 @@ body {
 
 .container {
   height: 100vh;
+  padding:3em 0 0 0
 }
 
 #app{
@@ -31,6 +38,28 @@ body {
   text-align: center;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color:#F0F0F0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+
 /* Splash */
 #splash-name{
   font-size: 10vw;
@@ -38,28 +67,17 @@ body {
 }
 
 /* About */
-
-.chip{
-  min-width:90px;
-}
-
 #profile-pic{
-	width: 25em;
-	height: 25em;
+	width: 40em;
+	height: 50em;
 	object-fit: cover;
-	border-radius: 50%;
 	padding: 2em;
-
+  border-radius: 40px;
 }
 
-#skills,#socials,#tech{
-width: 10em;
+#profile-content{
+  margin:0 0 0 -8em;
 }
-
-#projects{
-  width:25em;
-}
-
 /* Project */
 .project-preview{
   width: 250px;
@@ -67,3 +85,10 @@ width: 10em;
 	object-fit: cover;
 }
 
+#projects{
+  width:25em;
+}
+
+/* Experience */
+
+/* Footnote */

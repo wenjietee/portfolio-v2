@@ -11,30 +11,30 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="container grid">
-        <div class="col-12 text-6xl font-semibold text-center">Experience</div>
+    <section id="experience">
+        <div class="container grid">
+            <div class="col-12 text-6xl font-semibold text-center">Experience</div>
 
-        <div class="col-12">
-            <Accordion v-for="(exp, index) in experience" value="0">
-                <AccordionPanel :value="index">
-                    <AccordionHeader>{{ exp.name }} {{ exp.company }} {{ exp.period }}</AccordionHeader>
-                    <AccordionContent>
-                        <p class="text-left">
-                            {{ exp.description }}
-                        </p>
-                        <div v-for="achieve in exp.achievements" class="grid">
-                            <div class="col-12 text-left">{{ achieve }}</div>
-                        </div>
-                        <div class="grid">
-                            <div v-for="tech in exp.tech" class="col-12" id="tech">
-                                <Chip :label="tech" class="chip" />
+            <div class="col-12">
+                <Accordion v-for="(exp, index) in experience" value="0">
+                    <AccordionPanel :value="index">
+                        <AccordionHeader>{{ exp.name }} {{ exp.company }} {{ exp.period }}</AccordionHeader>
+                        <AccordionContent>
+                            <p class="text-left">
+                                {{ exp.description }}
+                            </p>
+                            <div v-for="achieve in exp.achievements" class="grid">
+                                <div class="col-12 text-left">{{ achieve }}</div>
                             </div>
-                        </div>
-                    </AccordionContent>
-                </AccordionPanel>
-            </Accordion>
-
-
+                            <div class="grid">
+                                <div v-for="tech in exp.tech" class="col-12">
+                                    <Chip :label="tech" class="chip" />
+                                </div>
+                            </div>
+                        </AccordionContent>
+                    </AccordionPanel>
+                </Accordion>
+            </div>
         </div>
-    </div>
+    </section>
 </template>
