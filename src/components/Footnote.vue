@@ -1,6 +1,6 @@
 <template>
     <section id="footnote">
-        <div class="container">
+        <div>
             Tee Wenjie ©{{ new Date().getFullYear() }}
         </div>
     </section>

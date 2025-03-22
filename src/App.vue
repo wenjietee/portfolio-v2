@@ -22,16 +22,16 @@ onMounted(async () => {
 
 <template>
   <div v-if="data">
-    <div>
-      <Navbar />
-      <!-- <Splash :about="data.about" /> -->
-      <About :about="data.about" />
-      <!-- <Projects :projects="data.projects" /> -->
-      <!-- <Experience :experience="data.experience" /> -->
-      <!-- Blog -->
-      <!-- Secret Game -->
-      <Footnote />
-    </div>
+
+    <Navbar />
+    <!-- <Splash :about="data.about" /> -->
+    <About :about="data.about" />
+    <!-- <Projects :projects="data.projects" /> -->
+    <Experience :experience="data.experience" />
+    <!-- Blog -->
+    <!-- Secret Game -->
+    <Footnote />
+
 
   </div>
 </template>

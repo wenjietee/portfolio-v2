@@ -12,8 +12,8 @@ const props = defineProps({
 
 <template>
     <section id="experience">
-        <div class="container grid">
-            <div class="col-12 text-6xl font-semibold text-center">Experience</div>
+        <div class="container grid page">
+            <div class="col-12 text-6xl font-semibold text-left title">Experience</div>
 
             <div class="col-12">
                 <Accordion v-for="(exp, index) in experience" value="0">
