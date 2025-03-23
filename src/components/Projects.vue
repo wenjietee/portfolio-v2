@@ -12,7 +12,7 @@ const props = defineProps({
             <div class="col-12 text-6xl font-semibold text-center">Projects</div>
             <div class="col-12">
                 <div class="grid">
-                    <div v-for="project in projects" class="col-12" id="projects">
+                    <div v-for="project in projects" class="col-4">
                         <ProjectCard :project="project" />
                     </div>
                 </div>

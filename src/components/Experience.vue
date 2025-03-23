@@ -15,25 +15,27 @@ const props = defineProps({
         <div class="container grid page">
             <div class="col-12 text-6xl font-semibold text-left title">Experience</div>
 
-            <div class="col-12">
-                <Accordion v-for="(exp, index) in experience" value="0">
-                    <AccordionPanel :value="index">
-                        <AccordionHeader>{{ exp.name }} {{ exp.company }} {{ exp.period }}</AccordionHeader>
-                        <AccordionContent>
+            <div class="col-12 accordion-container">
+                <Accordion class="accordion" v-for="(exp, index) in experience" :value="['0']" multiple>
+                    <AccordionPanel class="accordion-panel" :value="index">
+                        <AccordionHeader class="accordion-header">{{ exp.name }} {{ exp.company }} {{ exp.period }}
+                        </AccordionHeader>
+                        <AccordionContent class="accordion-content">
                             <p class="text-left">
                                 {{ exp.description }}
                             </p>
                             <div v-for="achieve in exp.achievements" class="grid">
                                 <div class="col-12 text-left">{{ achieve }}</div>
                             </div>
-                            <div class="grid">
+                            <!-- <div class="grid">
                                 <div v-for="tech in exp.tech" class="col-12">
                                     <Chip :label="tech" class="chip" />
                                 </div>
-                            </div>
+                            </div> -->
                         </AccordionContent>
                     </AccordionPanel>
                 </Accordion>
+
             </div>
         </div>
     </section>
