@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
     <section id="projects">
         <div class="container grid">
-            <div class="col-12 text-6xl font-semibold text-center">Projects</div>
+            <div class="col-12 text-6xl font-semibold text-left title">Projects</div>
             <div class="col-12">
                 <div class="grid">
                     <div v-for="project in projects" class="col-4">

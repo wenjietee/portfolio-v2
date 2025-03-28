@@ -1,49 +1,34 @@
 <template>
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item">
+            <li class="nav-item nav-item-text">
                 <a href="#home">
-                    <h5>Home</h5>
+                    <p>Home</p>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-text">
                 <a href="#about">
-                    <h5>About</h5>
+                    <p>About</p>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-text">
                 <a href="#projects">
-                    <h5>Projects</h5>
+                    <p>Projects</p>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-text">
                 <a href="#experience">
-                    <h5>Experience</h5>
-                </a>
-            </li>
-            <li class="nav-item nav-item-icon">
-                <a href="mailto:wenjietj@gmail.com">
-                    <i class="pi pi-envelope"></i>
-                </a>
-            </li>
-            <li class="nav-item nav-item-icon">
-                <a target="_blank" href="https://www.linkedin.com/in/teewenjie/">
-                    <i class="pi pi-linkedin"></i>
-                </a>
-            </li>
-            <li class="nav-item nav-item-icon">
-                <a target="_blank" href="https://github.com/wenjietee/">
-                    <i class="pi pi-github"></i>
+                    <p>Experience</p>
                 </a>
             </li>
             <!-- <li class="nav-item">
                 <a href="#blog">
-                    <h5>Blog</h5>
+                    <p>Blog</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#game">
-                    <h5>Game</h5>
+                    <p>Game</p>
                 </a>
             </li> -->
         </ul>

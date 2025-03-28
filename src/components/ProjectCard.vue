@@ -19,11 +19,11 @@ const props = defineProps({
                 <a :href="project.url" class="flex align-items-center text-2xl font-semibold">{{ project.url }}</a>
                 <a :href="project.repo" class="flex align-items-center text-2xl font-semibold">{{ project.repo }}</a>
             </div>
-            <div class="grid">
+            <!-- <div class="grid">
                 <div v-for="tech in project.tech" class="col-12" id="skills">
                     <Chip :label="tech" class="chip" />
                 </div>
-            </div>
+            </div> -->
         </template>
     </Card>
 

@@ -32,7 +32,6 @@ onMounted(async () => {
     <!-- Secret Game -->
     <Footnote />
 
-
   </div>
 </template>
 
