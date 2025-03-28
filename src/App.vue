@@ -26,7 +26,7 @@ onMounted(async () => {
     <Navbar />
     <!-- <Splash :about="data.about" /> -->
     <!-- <About :about="data.about" /> -->
-    <!-- <Projects :projects="data.projects" /> -->
+    <Projects :projects="data.projects" />
     <Experience :experience="data.experience" />
     <!-- Blog -->
     <!-- Secret Game -->
