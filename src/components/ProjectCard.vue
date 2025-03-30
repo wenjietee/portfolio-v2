@@ -1,6 +1,6 @@
 <script setup>
 import Card from 'primevue/card';
-import Chip from 'primevue/chip';
+import { trimUrl } from '../utils/utils';
 
 const props = defineProps({
     project: Object,
@@ -15,9 +15,15 @@ const props = defineProps({
         <template #title>{{ project.name }}</template>
         <template #subtitle>{{ project.description }}</template>
         <template #content>
-            <div class="flex gap-4 mt-1">
-                <a :href="project.url" class="flex align-items-center text-2xl font-semibold">{{ project.url }}</a>
-                <a :href="project.repo" class="flex align-items-center text-2xl font-semibold">{{ project.repo }}</a>
+            <div class="grid">
+                <div class="col-12"> <a v-if="project.url" :href="project.url" target="_blank" class="url-icon"><i
+                            class="pi pi-external-link"></i> {{
+                                trimUrl(project.url) }}</a></div>
+                <div class="col-12">
+                    <a v-if="project.repo" :href="project.repo" target="_blank" class="url-icon"><i
+                            class="pi pi-external-link"></i> {{
+                                trimUrl(project.repo) }}</a>
+                </div>
             </div>
             <!-- <div class="grid">
                 <div v-for="tech in project.tech" class="col-12" id="skills">

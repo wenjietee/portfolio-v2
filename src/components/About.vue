@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <section id="about">
         <div class="container grid">
-            <div class="col-9" id="profile-content">
+            <div class="col-8" id="profile-content">
                 <div class="grid">
                     <div class="col-12 text-6xl font-semibold text-left title">About</div>
                     <div class="col-12 text-left">
@@ -24,7 +24,7 @@ const props = defineProps({
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <img :src="about.portrait" alt="profile" id="profile-pic" />
             </div>
         </div>
