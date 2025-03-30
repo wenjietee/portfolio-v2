@@ -3,10 +3,10 @@
         "name": "Tee Wenjie",
         "title": "Full-Stack Web Developer",
         "headline": "I build full stack web applications",
-        "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
+        "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. <br/><br/> My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
         "portrait": "/portfolio-v2/media/portrait/profile.jpg",
-        "resume": "",
-        "skills": [
+        "resume": "/portfolio-v2/media/resume/Resume_2024_TeeWenjie.pdf",
+        "tech_skills": [
             "ReactJS",
             "NodeJS",
             "ExpressJS",
@@ -18,17 +18,45 @@
             "MongoDB",
             "Git",
             "Jenkins"
+        ],
+        "art_skills": [
+            "3DS Max",
+            "Photoshop",
+            "Digital Art",
+            "After Effects",
+            "Animation",
+            "3D Modelling"
         ]
     },
     "experience": [
         {
+            "name": "Full-Stack Developer",
+            "company": "FPT Asia Pacific @ BookingSG",
+            "period": "2025 - Present",
+            "description": "Embedded full-stack developer at Govtech for BookingSG.",
+            "urls": [
+                "https://home.booking.gov.sg",
+                "https://fptsoftware.com/fpt-asia-pacific"
+            ],
+            "location": "Singapore",
+            "achievements": [],
+            "tech": [
+                "AWS",
+                "PostgreSQL",
+                "NodeJS",
+                "Typescript",
+                "Javascript",
+                "Gitlab CI/CD"
+            ]
+        },
+        {
             "name": "Software Development Engineer",
-            "company": "NTT Data Inc",
-            "period": "Sep 2021 - Present",
+            "company": "NTT Data Inc @ DSTA",
+            "period": "2021 - 2024",
             "description": "Full-stack Typescript developer for Armed Forces Enterprise Safety Information System (ESIS) integrated with Safe Guardian Mobile Application for the SAF consolidation and analysis of Safety Incidents.",
+            "urls": ["https://services.global.ntt/en-us"],
             "achievements": [
                 "\"Recognition for Excellence\" was awarded by the company for proactive leadership in organizing and advancing projects and achieving successful outcomes.",
-                "Revamped the development of new ETL workflows, leading to a 50% increase in issue resolution and workflow creation efficiency improved by 25%.",
                 "Developed and delivered Email Management features which are used across all branches of the Armed Forces enabling efficient email broadcasting for many modules residing in ESIS"
             ],
             "tech": [
@@ -46,8 +74,9 @@
         {
             "name": "Terrain Engineer",
             "company": "ST Engineering",
-            "period": "Nov 2017 - Sep 2021",
+            "period": "2017 - 2021",
             "description": "Specialise in creating and automating large scale detailed environments for simulators using 3Ds Max and Unity",
+            "urls": ["https://www.stengg.com/"],
             "achievements": [
                 "Led a team of three 3D modellers in 2020 to deliver and integrate multiple large-scale 3D terrains",
                 "Created procedural modelling scripts to build and automate processes to scale terrain production from 1km sq to 5km sq.",
@@ -58,8 +87,9 @@
         {
             "name": "Software Engineering Student",
             "company": "General Assembly",
-            "period": "Nov 2020 - Jun 2021",
+            "period": "2020 - 2021",
             "description": "Building strong foundational knowledge in full-stack web development using modern stacks and frameworks.",
+            "urls": ["https://generalassemb.ly/"],
             "achievements": [],
             "tech": [
                 "ReactJS",
