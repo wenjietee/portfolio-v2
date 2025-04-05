@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 /**
  * Util to wrap each letter into a span element for animation
