@@ -1,4 +1,5 @@
 <script setup>
+import { animateTitleText, resetTitleText } from '../utils/animUtils';
 import ProjectCard from './ProjectCard.vue';
 
 const props = defineProps({
@@ -9,7 +10,8 @@ const props = defineProps({
 <template>
     <section id="projects">
         <div class="container grid">
-            <div class="col-12 text-6xl font-semibold text-left title">Projects</div>
+            <div class="col-12 text-6xl font-semibold text-left title" @mouseenter="animateTitleText"
+                @mouseleave="resetTitleText">Projects</div>
             <div class="col-12">
                 <div class="grid">
                     <div v-for="project in projects" class="col-4">

@@ -39,3 +39,25 @@ export const resetNavText = (event) => {
         stagger: 0.05,
     });
 };
+
+export const animateTitleText = (event) => {
+    const letters = splitTargetToElements(event.target);
+
+    gsap.to(letters, {
+        y: -5,
+        duration: 0.3,
+        ease: 'power3.in',
+        stagger: 0.05,
+    });
+};
+
+export const resetTitleText = (event) => {
+    const letters = splitTargetToElements(event.target);
+
+    gsap.to(letters, {
+        y: 0,
+        duration: 0.3,
+        ease: 'power1.inOut',
+        stagger: 0.05,
+    });
+};

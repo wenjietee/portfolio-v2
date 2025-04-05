@@ -5,6 +5,7 @@ import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 import Chip from 'primevue/chip';
 import { trimUrl } from '../utils/textUtils';
+import { animateTitleText, resetTitleText } from '../utils/animUtils';
 
 const props = defineProps({
     experience: Array,
@@ -14,7 +15,8 @@ const props = defineProps({
 <template>
     <section id="experience">
         <div class="container grid page">
-            <div class="col-12 text-6xl font-semibold text-left title">Experience</div>
+            <div class="col-12 text-6xl font-semibold text-left title" @mouseenter="animateTitleText"
+                @mouseleave="resetTitleText">Experience</div>
 
             <div class="col-12 accordion-container">
                 <Accordion class="accordion" v-for="(exp, index) in experience" :value="['0']" multiple

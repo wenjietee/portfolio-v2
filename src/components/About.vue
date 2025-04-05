@@ -1,5 +1,6 @@
 <script setup>
 import Button from 'primevue/button';
+import { animateTitleText, resetTitleText } from '../utils/animUtils';
 const props = defineProps({
     about: Object
 })
@@ -10,7 +11,8 @@ const props = defineProps({
         <div class="container grid">
             <div class="col-8" id="profile-content">
                 <div class="grid">
-                    <div class="col-12 text-6xl font-semibold text-left title">About</div>
+                    <div class="col-12 text-6xl font-semibold text-left title" @mouseenter="animateTitleText"
+                        @mouseleave="resetTitleText">About</div>
                     <div class="col-12 text-left">
                         <Button class="text-lg text-center" id="resume">Resume</Button>
                     </div>
