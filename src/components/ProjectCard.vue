@@ -1,6 +1,6 @@
 <script setup>
 import Card from 'primevue/card';
-import { trimUrl } from '../utils/utils';
+import { trimUrl } from '../utils/textUtils';
 
 const props = defineProps({
     project: Object,

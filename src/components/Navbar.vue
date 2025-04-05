@@ -1,34 +1,38 @@
+<script setup>
+import { animateNavText, resetNavText } from '../utils/animUtils';
+</script>
+
 <template>
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item nav-item-text">
+            <li class="nav-item ">
                 <a href="#home">
-                    <p>Home</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Home</p>
                 </a>
             </li>
-            <li class="nav-item nav-item-text">
+            <li class="nav-item ">
                 <a href="#about">
-                    <p>About</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">About</p>
                 </a>
             </li>
-            <li class="nav-item nav-item-text">
+            <li class="nav-item ">
                 <a href="#projects">
-                    <p>Projects</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Projects</p>
                 </a>
             </li>
-            <li class="nav-item nav-item-text">
+            <li class="nav-item ">
                 <a href="#experience">
-                    <p>Experience</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Experience</p>
                 </a>
             </li>
             <!-- <li class="nav-item">
                 <a href="#blog">
-                    <p>Blog</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Blog</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#game">
-                    <p>Game</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Game</p>
                 </a>
             </li> -->
         </ul>

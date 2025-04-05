@@ -4,7 +4,7 @@ import AccordionPanel from 'primevue/accordionpanel';
 import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 import Chip from 'primevue/chip';
-import { trimUrl } from '../utils/utils';
+import { trimUrl } from '../utils/textUtils';
 
 const props = defineProps({
     experience: Array,

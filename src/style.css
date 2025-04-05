@@ -186,3 +186,7 @@ body {
     height: 1.5rem;
     font-size: 0.9rem;
 }
+
+.letter {
+    display: inline-block;
+}
