@@ -1,11 +1,11 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import About from './components/About.vue';
-import Experience from './components/Experience.vue';
-import Projects from './components/Projects.vue';
-import Splash from './components/Splash.vue';
+import About from './pages/About.vue';
+import Experience from './pages/Experience.vue';
+import Projects from './pages/Projects.vue';
+import Splash from './pages/Splash.vue';
 import Navbar from './components/Navbar.vue';
-import Contact from './components/Contact.vue';
+import Contact from './pages/Contact.vue';
 
 const data = ref(null)
 
