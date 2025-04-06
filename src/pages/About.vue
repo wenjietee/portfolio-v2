@@ -1,6 +1,7 @@
 <script setup>
-import Card from 'primevue/card';
 import { animateTitleText, resetTitleText } from '../utils/animUtils';
+import Playlists from '../components/Playlists.vue';
+import Skills from './Skills.vue';
 const props = defineProps({
     about: Object
 })
@@ -19,18 +20,7 @@ const props = defineProps({
                     <div class="col-12">
                         <div class="grid">
                             <!-- //TODO Component for spotify -->
-                            <Card style="width: 25rem; overflow: hidden">
-                                <template #header>
-                                    Spotify
-                                </template>
-                                <template #title>Spotify</template>
-                                <template #subtitle>Spotify</template>
-                                <template #content>
-                                    <div class="grid">
-                                        Spotify
-                                    </div>
-                                </template>
-                            </Card>
+                            <Playlists />
                         </div>
                     </div>
                 </div>
@@ -41,7 +31,7 @@ const props = defineProps({
             <div class="col-12">
                 <div class="grid">
                     <!-- //TODO Component for branding to display skills-->
-                    My Skills Flair here
+                    <Skills />
                 </div>
             </div>
         </div>

@@ -6,15 +6,15 @@ const props = defineProps({
 </script>
 
 <template>
-    <Card style="width: 25rem; overflow: hidden">
+    <Card style="width: 100%; overflow: hidden">
         <template #header>
-            Spotify
+            Skills Flair
         </template>
-        <template #title>Spotify</template>
-        <template #subtitle>Spotify</template>
+        <template #title>Skills Flair</template>
+        <template #subtitle>Skills Flair</template>
         <template #content>
             <div class="grid">
-                Spotify
+                Skills Flair
             </div>
         </template>
     </Card>

@@ -42,7 +42,8 @@ body {
 
 #about,
 #projects,
-#experience {
+#experience,
+#contact {
     margin: 0 0 0 -8em;
     min-height: 70vh;
 }
