@@ -17,7 +17,7 @@ const props = defineProps({
                         <Button class="text-lg text-center" id="resume">Resume</Button>
                     </div>
                     <div class="col-12 text-lg text-left" id="description">
-                        <p v-html="about.description" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 80%' }">
+                        <p v-html="about.description">
                         </p>
                     </div>
                     <div class="col-12">

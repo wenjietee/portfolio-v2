@@ -1,6 +1,6 @@
 <template>
-    <section id="footnote">
-        <ul class="footnote-social">
+    <section id="contact">
+        <ul class="contact-social">
             <li class="social-icon">
                 <a href="mailto:wenjietj@gmail.com">
                     <i class="pi pi-envelope"></i>
@@ -17,7 +17,7 @@
                 </a>
             </li>
         </ul>
-        <div class="footnote-copyright">
+        <div class="contact-copyright">
             <span>Tee Wenjie </span>
             <span>©{{ new Date().getFullYear() }}</span>
         </div>

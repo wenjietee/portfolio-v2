@@ -5,7 +5,7 @@ import Experience from './components/Experience.vue';
 import Projects from './components/Projects.vue';
 import Splash from './components/Splash.vue';
 import Navbar from './components/Navbar.vue';
-import Footnote from './components/Footnote.vue';
+import Contact from './components/Contact.vue';
 
 const data = ref(null)
 
@@ -24,13 +24,13 @@ onMounted(async () => {
   <div v-if="data">
 
     <Navbar />
-    <Splash :about="data.about" />
-    <About :about="data.about" />
-    <Projects :projects="data.projects" />
-    <Experience :experience="data.experience" />
+    <Splash :about="data.about" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 80%' }" />
+    <About :about="data.about" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 80%' }" />
+    <Projects :projects="data.projects" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 80%' }" />
+    <Experience :experience="data.experience" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 80%' }" />
     <!-- Blog -->
     <!-- Secret Game -->
-    <Footnote />
+    <Contact />
 
   </div>
 </template>

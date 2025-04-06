@@ -123,8 +123,8 @@ body {
     padding: 20px 0 !important;
 }
 
-/* Footnote */
-#footnote {
+/* Contact */
+#contact {
     min-height: 20vh;
     display: flex;
     flex-direction: column;
@@ -132,10 +132,10 @@ body {
     align-items: center;
 }
 
-.footnote-copyright {
+.contact-copyright {
     font-size: 1rem;
 }
-.footnote-social {
+.contact-social {
     display: flex;
     list-style: none;
     justify-content: center;
