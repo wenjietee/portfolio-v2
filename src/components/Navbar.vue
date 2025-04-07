@@ -25,6 +25,11 @@ import { animateNavText, resetNavText } from '../utils/animUtils';
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Experience</p>
                 </a>
             </li>
+            <li class="nav-item ">
+                <a href="#contact">
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Contact</p>
+                </a>
+            </li>
             <!-- <li class="nav-item">
                 <a href="#blog">
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Blog</p>

@@ -30,7 +30,7 @@ onMounted(async () => {
     <Experience :experience="data.experience" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top center' }" />
     <!-- Blog -->
     <!-- Secret Game -->
-    <Contact v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 70%' }" />
+    <Contact :about="data.about" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 70%' }" />
 
   </div>
 </template>

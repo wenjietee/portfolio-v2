@@ -1,56 +1,49 @@
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const props = defineProps({
+    about: Object
+})
+
+const currentTime = ref('')
+
+const updateTime = () => {
+    currentTime.value = new Date().toLocaleTimeString('en-US', { timeZone: 'Singapore' })
+}
+let timer = null
+
+onMounted(() => {
+    updateTime()
+    timer = setInterval(updateTime, 1000)
+})
+onBeforeUnmount(() => {
+    clearInterval(timer)
+})
+
+</script>
 <template>
     <section id="contact">
 
-        <!-- <ul class="contact-social">
-            <li class="social-icon">
-                <a href="mailto:wenjietj@gmail.com">
-                    <i class="pi pi-envelope"></i>
-                </a>
-            </li>
-            <li class="social-icon">
-                <a target="_blank" href="https://www.linkedin.com/in/teewenjie/">
-                    <i class="pi pi-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-icon">
-                <a target="_blank" href="https://github.com/wenjietee/">
-                    <i class="pi pi-github"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="contact-copyright">
-            <span>Tee Wenjie </span>
-            <span>©{{ new Date().getFullYear() }}</span>
-        </div> -->
         <div class="container grid">
             <div class="col-12 text-6xl font-semibold text-center title" @mouseenter="animateTitleText"
                 @mouseleave="resetTitleText">Contact
             </div>
-            <div class="col-12 text-left">Email here</div>
-
-            <div class="col-4 text-left"> full stack creative technologist with a passion for building things that live
-                on the
-                internet.</div>
-            <div class="col-4 contact-copyright">
-                <span>Tee Wenjie </span>
-                <span>©{{ new Date().getFullYear() }}</span>
+            <div class="col-4 text-left grid">
+                <div class="col-12">{{ about.email }}</div>
+                <div class="col-12">{{ about.tagline }}</div>
+            </div>
+            <div class="col-4 grid contact-copyright">
+                <div class="col-6">
+                    {{ about.name }} © {{ new Date().getFullYear() }}
+                </div>
+                <div class="col-6">{{ currentTime }} SGT(GMT+8)</div>
             </div>
             <div class="col-4">
-                <div>Socials</div>
+                <div class="text-right">Socials</div>
                 <ul class="contact-social">
-                    <li class="social-icon">
-                        <a href="mailto:wenjietj@gmail.com">
-                            <i class="pi pi-envelope"></i>
-                        </a>
-                    </li>
-                    <li class="social-icon">
-                        <a target="_blank" href="https://www.linkedin.com/in/teewenjie/">
-                            <i class="pi pi-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="social-icon">
-                        <a target="_blank" href="https://github.com/wenjietee/">
-                            <i class="pi pi-github"></i>
+                    <li v-for="social in about.socials" :key="social.name">
+                        <a class="social-icon" target="_blank" v-if="social.url" :href="social.url">
+                            {{ social.name }}
                         </a>
                     </li>
                 </ul>
