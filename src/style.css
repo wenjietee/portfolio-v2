@@ -84,6 +84,32 @@ body {
     font-size: 2.2rem;
 }
 
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger > i {
+    padding: 0.6rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    .navbar {
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .nav-list {
+        display: none;
+        background-color: transparent;
+    }
+}
+
 /* Splash */
 #splash-name {
     font-size: 10vw;

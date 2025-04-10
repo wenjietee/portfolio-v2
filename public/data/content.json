@@ -1,12 +1,11 @@
 {
     "about": {
         "name": "Tee Wenjie",
-        "title": "Full-Stack Web Developer",
-        "headline": "I build full stack web applications",
+        "title": "Creative Full-Stack Technologist",
+        "tagline": "Bridging design and code with empathy, curiosity, and a touch of pixel nostalgia.",
         "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. <br/><br/> My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
         "portrait": "/portfolio-v2/media/portrait/profile.jpg",
         "email": "wenjiet.dev@gmail.com",
-        "tagline": "Full stack creative technologist with a passion for building things that live on the internet.",
         "socials": [
             { "name": "Github", "url": "https://github.com/wenjietee" },
             {
