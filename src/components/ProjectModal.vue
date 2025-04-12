@@ -10,7 +10,8 @@ const props = defineProps({
     <div class="container grid">
         <div class="col-5">
             <div class="grid ">
-                <div class="col-12 text-6xl font-semibold text-left">{{ project.name }}</div>
+                <div class="col-12 text-6xl font-semibold xl:text-left lg:text-center md:text-center sm:text-center ">{{
+                    project.name }}</div>
                 <div class="col-12 text-left">
                     <p v-html="project.description"></p>
                 </div>

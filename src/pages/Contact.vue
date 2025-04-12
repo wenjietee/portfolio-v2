@@ -26,20 +26,21 @@ onBeforeUnmount(() => {
 
         <div class="container grid">
             <div class="col-12 text-6xl font-semibold text-center title" @mouseenter="animateTitleText"
-                @mouseleave="resetTitleText">Contact
+                @mouseleave="resetTitleText">
+                Contact
             </div>
-            <div class="col-4 text-left grid">
+            <div class="xl:col-4 sm:col-12 text-left grid contact-description">
                 <div class="col-12">{{ about.email }}</div>
                 <div class="col-12">{{ about.tagline }}</div>
             </div>
-            <div class="col-4 grid contact-copyright">
-                <div class="col-6">
+            <div class="xl:col-4  sm:col-12 grid contact-copyright">
+                <div class="xl:col-6 sm:col-12">
                     {{ about.name }} © {{ new Date().getFullYear() }}
                 </div>
-                <div class="col-6">{{ currentTime }} SGT(GMT+8)</div>
+                <div class="xl:col-6 sm:col-12">{{ currentTime }} SGT(GMT+8)</div>
             </div>
-            <div class="col-4">
-                <div class="text-right">Socials</div>
+            <div class="xl:col-4 sm:col-12">
+                <div class="contact-social-header">Socials</div>
                 <ul class="contact-social">
                     <li v-for="social in about.socials" :key="social.name">
                         <a class="social-icon" target="_blank" v-if="social.url" :href="social.url">

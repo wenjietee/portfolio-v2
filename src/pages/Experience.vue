@@ -6,23 +6,26 @@ import AccordionContent from 'primevue/accordioncontent';
 import Chip from 'primevue/chip';
 import { trimUrl } from '../utils/textUtils';
 import { animateTitleText, resetTitleText } from '../utils/animUtils';
+import gsap from 'gsap';
 
 const props = defineProps({
     experience: Array,
 })
+
 </script>
 
 <template>
     <section id="experience">
         <div class="container grid page">
-            <div class="col-12 text-6xl font-semibold text-left title" @mouseenter="animateTitleText"
-                @mouseleave="resetTitleText">Experience</div>
+            <div class="col-12 text-6xl font-semibold xl:text-left lg:text-center md:text-center sm:text-center title"
+                @mouseenter="animateTitleText" @mouseleave="resetTitleText">Experience</div>
 
             <div class="col-12 accordion-container">
-                <Accordion class="accordion" v-for="(exp, index) in experience" :value="['0']" multiple
-                    expandIcon="pi pi-plus" collapseIcon="pi pi-minus">
+                <Accordion class="accordion" v-for="(exp, index) in experience" :value="['0']"
+                    expandIcon="pi pi-chevron-down" collapseIcon="pi pi-chevron-up" multiple lazy>
                     <AccordionPanel class="accordion-panel" :value="index">
                         <AccordionHeader class="accordion-header grid">
+                            <i class="pi pi-bullseye"></i>
                             <div class="col-6 text-left">{{ exp.name }} · {{ exp.company }}</div>
                             <div class="col-5 text-right">{{ exp.period }}</div>
                         </AccordionHeader>

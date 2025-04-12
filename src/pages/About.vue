@@ -10,10 +10,10 @@ const props = defineProps({
 <template>
     <section id="about">
         <div class="container grid">
-            <div class="col-8" id="profile-content">
+            <div class="xl:col-8 lg:col-12 md:col-12 sm:col-12" id="profile-content">
                 <div class="grid">
-                    <div class="col-12 text-6xl font-semibold text-left title" @mouseenter="animateTitleText"
-                        @mouseleave="resetTitleText">About</div>
+                    <div class="col-12 text-6xl font-semibold xl:text-left lg:text-center md:text-center sm:text-center title"
+                        @mouseenter="animateTitleText" @mouseleave="resetTitleText">About</div>
                     <div class="col-12 text-lg text-left" id="description">
                         <p v-html="about.description"></p>
                     </div>
@@ -25,7 +25,7 @@ const props = defineProps({
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="xl:col-4 lg:col-12 md:col-12 sm:col-12">
                 <img :src="about.portrait" alt="profile" id="profile-pic" />
             </div>
             <div class="col-12">
