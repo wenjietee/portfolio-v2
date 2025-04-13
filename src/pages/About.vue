@@ -28,10 +28,7 @@ const props = defineProps({
                 <img :src="about.portrait" alt="profile" id="profile-pic" />
             </div>
             <div class="col-12">
-                <div class="grid">
-                    <!-- //TODO Component for branding to display skills-->
-                    <Skills />
-                </div>
+                <Skills :skills="{ tech_skills: about.tech_skills, art_skills: about.art_skills }" />
             </div>
         </div>
     </section>

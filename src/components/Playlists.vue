@@ -3,8 +3,6 @@ import Card from 'primevue/card';
 const props = defineProps({
     playlists: Object
 })
-
-// console.log(playlists)
 </script>
 
 <template>

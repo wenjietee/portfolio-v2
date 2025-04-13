@@ -1,22 +1,33 @@
 <script setup>
-import Card from 'primevue/card';
 const props = defineProps({
-    project: Object,
+    skills: Object,
 })
 </script>
 
 <template>
-    <Card style="width: 100%; overflow: hidden">
-        <template #header>
-            Skills Flair
-        </template>
-        <template #title>Skills Flair</template>
-        <template #subtitle>Skills Flair</template>
-        <template #content>
-            <div class="grid">
-                Skills Flair
+    <div class="skills-container">
+        <div class="grid">
+            <div class="col-12">
+                Logo Here
             </div>
-        </template>
-    </Card>
-
+            <div class="col-3">
+                [
+            </div>
+            <div class="col-3">
+                <div>Tech Skills</div>
+                <div v-for="techSkill in skills.tech_skills">
+                    <Chip :label="techSkill" class="chip" />
+                </div>
+            </div>
+            <div class="col-3">
+                <div>Art Skills</div>
+                <div v-for="artSkill in skills.art_skills">
+                    <Chip :label="artSkill" class="chip" />
+                </div>
+            </div>
+            <div class="col-3">
+                ]
+            </div>
+        </div>
+    </div>
 </template>
