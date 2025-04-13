@@ -153,10 +153,17 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center;
 }
+.contact-title {
+    margin-top: 0;
+}
 
 .contact-copyright {
     font-size: 1rem;
     margin-top: 2rem;
+    margin-left: 2rem;
+}
+.contact-social-container {
+    margin-left: -3rem;
 }
 .contact-social-header {
     text-align: right;
@@ -169,7 +176,10 @@ body {
     width: 100%;
     margin-left: 0.2rem;
 }
-
+.contact-divider {
+    margin-top: 8rem;
+    border-top: 3px dotted #bbb;
+}
 .social-icon {
     height: 2rem;
     width: 2rem;
