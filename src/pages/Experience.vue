@@ -5,12 +5,12 @@ import AccordionHeader from 'primevue/accordionheader';
 import AccordionContent from 'primevue/accordioncontent';
 import Chip from 'primevue/chip';
 import { trimUrl } from '../utils/textUtils';
-import { animateTitleText, resetTitleText } from '../utils/animUtils';
-import gsap from 'gsap';
+import { animateTitleText, resetTitleText, animateExpSection } from '../utils/animUtils';
 
 const props = defineProps({
     experience: Array,
 })
+
 
 </script>
 
@@ -23,7 +23,7 @@ const props = defineProps({
             <div class="col-12 accordion-container">
                 <Accordion class="accordion" v-for="(exp, index) in experience" :value="['0']"
                     expandIcon="pi pi-chevron-down" collapseIcon="pi pi-chevron-up" multiple lazy>
-                    <AccordionPanel class="accordion-panel" :value="index">
+                    <AccordionPanel class="accordion-panel" :value="index" @click="animateExpSection">
                         <AccordionHeader class="accordion-header grid">
                             <i class="pi pi-bullseye"></i>
                             <div class="col-6 text-left">{{ exp.name }} · {{ exp.company }}</div>
@@ -31,16 +31,16 @@ const props = defineProps({
                         </AccordionHeader>
                         <AccordionContent class="accordion-content">
                             <div v-for="url in exp.urls">
-                                <div class="text-left url-container">
+                                <div class="text-left url-container exp-content">
                                     <a v-if="url" :href="url" target="_blank" class="url-icon"><i
                                             class="pi pi-external-link"></i> {{
                                                 trimUrl(url) }}</a>
                                 </div>
                             </div>
-                            <p class="text-left">
+                            <p class="text-left exp-content">
                                 {{ exp.description }}
                             </p>
-                            <div v-for="achieve in exp.achievements" class="grid">
+                            <div v-for="achieve in exp.achievements" class="grid exp-content">
                                 <div class="col-12 text-left">{{ achieve }}</div>
                             </div>
                             <div class="skills flex flex-wrap align-items-start justify-content-start gap-2">

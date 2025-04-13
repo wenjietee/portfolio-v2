@@ -19,8 +19,7 @@ const props = defineProps({
                     </div>
                     <div class="col-12">
                         <div class="grid">
-                            <!-- //TODO Component for spotify -->
-                            <Playlists />
+                            <Playlists :playlists="about.playlists" />
                         </div>
                     </div>
                 </div>

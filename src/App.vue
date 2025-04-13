@@ -24,13 +24,15 @@ onMounted(async () => {
   <div v-if="data">
 
     <Navbar />
-    <Splash :about="data.about" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top center' }" />
-    <About :about="data.about" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top center' }" />
-    <Projects :projects="data.projects" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top center' }" />
-    <Experience :experience="data.experience" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top center' }" />
+    <Splash :about="data.about" v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
+    <About :about="data.about" v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
+    <Projects :projects="data.projects"
+      v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
+    <Experience :experience="data.experience"
+      v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
     <!-- Blog -->
     <!-- Secret Game -->
-    <Contact :about="data.about" v-scroll-fade="{ duration: 1, x: -30, y: 0, start: 'top 70%' }" />
+    <Contact :about="data.about" v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top 70%', stagger: 0.01 }" />
 
   </div>
 </template>

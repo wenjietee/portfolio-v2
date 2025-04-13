@@ -5,14 +5,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default {
     mounted(el, binding) {
-        const { duration, x, y, start, ease } = binding.value || {};
+        const { duration, x, y, start, ease, stagger } = binding.value || {};
 
-        gsap.from(el, {
+        const nestedElements = el.querySelectorAll('*');
+
+        gsap.from(nestedElements, {
             opacity: 0,
             x,
             y,
             duration,
             ease,
+            stagger,
             scrollTrigger: {
                 trigger: el,
                 start,

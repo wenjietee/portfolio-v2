@@ -106,12 +106,44 @@ body {
 /* About */
 #profile-pic {
     width: 30rem;
-    height: 40rem;
+    height: 30rem;
     object-fit: cover;
     border-radius: 10px;
     margin-top: 14rem;
 }
+.about-playlists {
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.about-playlists.p-card {
+    width: 40rem !important;
+}
 
+/* Playlists */
+.playlists-container {
+    display: flex;
+    flex-direction: row;
+}
+.playlists-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.playlist-item {
+    margin: 0 3rem;
+}
+.playlist-img {
+    max-height: 10rem;
+}
+.playlist-name {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.playlist-description {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
 /* Project */
 .project-preview {
     width: 400px;
@@ -176,6 +208,7 @@ body {
     width: 100%;
     margin-left: 0.2rem;
 }
+
 .contact-divider {
     margin-top: 8rem;
     border-top: 3px dotted #bbb;

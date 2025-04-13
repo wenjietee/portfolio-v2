@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { animateTitleText, resetTitleText } from '../utils/animUtils';
 
 const props = defineProps({
     about: Object
@@ -25,11 +26,12 @@ onBeforeUnmount(() => {
     <section id="contact">
 
         <div class="container grid">
-            <div class="col-12 contact-divider" />
+            <div class="col-12 contact-divider"></div>
             <div class="col-12 text-6xl font-semibold text-center title contact-title" @mouseenter="animateTitleText"
                 @mouseleave="resetTitleText">
                 Contact
             </div>
+
             <div class="xl:col-3 sm:col-12 text-left grid contact-description">
                 <div class="col-12">{{ about.email }}</div>
                 <div class="col-12">{{ about.tagline }}</div>

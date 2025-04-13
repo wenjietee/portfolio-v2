@@ -62,3 +62,30 @@ export const resetTitleText = (event) => {
         stagger: 0.05,
     });
 };
+
+export const animateExpSection = (event) => {
+    const header = event.target.closest('.accordion-header');
+    if (header) {
+        const content = header
+            .closest('.accordion-panel')
+            .querySelector('.accordion-content');
+        const expContent = content.querySelectorAll('.exp-content');
+        const chips = content.querySelectorAll('.chip');
+
+        gsap.from(expContent, {
+            opacity: 0,
+            x: -300,
+            y: 0,
+            ease: 'power4.out',
+            stagger: 0.1,
+        });
+        gsap.from(chips, {
+            opacity: 0,
+            delay: 0.5,
+            x: 0,
+            y: 50,
+            ease: 'bounce.out',
+            stagger: 0.1,
+        });
+    }
+};
