@@ -144,6 +144,23 @@ body {
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
+
+/* Skills */
+.skills-container {
+    margin-top: 5rem;
+}
+.skills-about,
+.skills {
+    margin-top: 1em;
+}
+
+.skills-bracket {
+    font-size: 14rem;
+    font-weight: 100;
+}
+.skills-list {
+    margin-top: 3rem;
+}
 /* Project */
 .project-preview {
     width: 400px;
@@ -237,15 +254,6 @@ body {
     font-size: 0.9rem;
     text-decoration: none;
     color: #313945;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    margin-top: 1em;
 }
 
 .chip {
