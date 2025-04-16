@@ -32,7 +32,7 @@ onMounted(async () => {
       v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
     <!-- Blog -->
     <!-- Secret Game -->
-    <Contact :about="data.about" v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top 70%', stagger: 0.01 }" />
+    <Contact :about="data.about" v-scroll-fade="{ duration: 1, x: 0, y: -30, start: 'top 70%', stagger: 0.01 }" />
 
   </div>
 </template>

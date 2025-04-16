@@ -163,12 +163,19 @@ body {
 }
 /* Project */
 .project-preview {
-    width: 29rem;
-    height: 20rem;
+    width: 43rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: 5px;
 }
-
+.project-name {
+    font-weight: bold;
+    text-align: left;
+}
+.project-tags {
+    text-align: center;
+    margin-left: -1rem;
+}
 /* Experience */
 .accordion-container {
     box-sizing: border-box;

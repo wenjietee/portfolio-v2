@@ -14,7 +14,7 @@ const props = defineProps({
                 @mouseenter="animateTitleText" @mouseleave="resetTitleText">Projects</div>
             <div class="col-12">
                 <div class="grid">
-                    <div v-for="project in projects" class="col-4">
+                    <div v-for="project in projects" class="xl:col-6 lg:col-6 md:col-12 sm:col-12">
                         <ProjectCard :project="project" />
                     </div>
                 </div>
