@@ -163,9 +163,10 @@ body {
 }
 /* Project */
 .project-preview {
-    width: 400px;
-    height: 250px;
+    width: 29rem;
+    height: 20rem;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 /* Experience */

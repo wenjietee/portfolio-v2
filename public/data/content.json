@@ -135,7 +135,7 @@
     "projects": [
         {
             "name": "Food Nomad",
-            "description": "Food Nomad is an app that advocates the sharing of recipes, lifehacks and excess ingredients within individuals in an effort to reduce food waste.",
+            "tags": ["Discover", "Connect", "Reduce"],
             "preview": "/portfolio-v2/media/fn/fn-login.png",
             "images": [
                 "/portfolio-v2/media/fn/fn-login.png",
@@ -148,7 +148,7 @@
         },
         {
             "name": "Missile Command",
-            "description": "A browser based game inspired by the 1980 Atari arcade classic.",
+            "tags": ["Fun", "Nostalgia", "Retro"],
             "preview": "/portfolio-v2/media/mc/mc-2.jpg",
             "images": [
                 "/portfolio-v2/media/mc/mc-1.jpg",
@@ -161,7 +161,7 @@
         },
         {
             "name": "What's My GST",
-            "description": "A progressive web app (PWA) for calculating GST and service charge in Singapore.",
+            "tags": ["Finance", "Assistant", "Go-Dutch"],
             "preview": "/portfolio-v2/media/wmg/wmg-1.jpg",
             "images": ["/portfolio-v2/media/wmg/wmg-1.jpg"],
             "repo": "https://github.com/wenjietee/whats-my-gst",
@@ -170,7 +170,7 @@
         },
         {
             "name": "Pokegotchi",
-            "description": "A Tamagotchi game based on Pokémon sprites.",
+            "tags": ["Pet", "Nostalgia", "Virtual"],
             "preview": "/portfolio-v2/media/pgc/pgc-1.png",
             "images": ["/portfolio-v2/media/pgc/pgc-1.png"],
             "repo": "https://github.com/wenjietee/pokegotchi",

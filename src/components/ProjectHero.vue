@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="grid">
+    <div class="container grid">
         <div class="col-12">
             <img :src="project.preview" :alt="`${project.name}-preview`" class="project-preview" />
         </div>
@@ -17,14 +17,12 @@ const props = defineProps({
         </div>
         <div class="col-4">
             <div class="flex flex-wrap align-items-start justify-content-end gap-2">
+                <div> <a v-if="project.url" :href="project.url" target="_blank">
+                        <i class="pi pi-external-link"></i></a></div>
+
                 <div>
                     <a v-if="project.repo" :href="project.repo" target="_blank">
-                        <i class="pi pi-code"></i>
-                    </a>
-                </div>
-                <div> <a v-if="project.url" :href="project.url" target="_blank">
-                        VISIT
-                    </a>
+                        <i class="pi pi-github"></i></a>
                 </div>
             </div>
         </div>
