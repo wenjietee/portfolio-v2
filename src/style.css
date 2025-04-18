@@ -155,16 +155,17 @@ body {
 }
 
 .skills-bracket {
-    font-size: 14rem;
+    font-size: 10rem;
     font-weight: 100;
 }
 .skills-list {
     margin-top: 3rem;
 }
+
 /* Project */
 .project-preview {
-    width: 43rem;
-    height: 25rem;
+    width: 29rem;
+    height: 19rem;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -172,10 +173,16 @@ body {
     font-weight: bold;
     text-align: left;
 }
-.project-tags {
-    text-align: center;
-    margin-left: -1rem;
+
+.project-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #313945;
 }
+.project-label {
+    text-align: left;
+}
+
 /* Experience */
 .accordion-container {
     box-sizing: border-box;
@@ -233,7 +240,6 @@ body {
     width: 100%;
     margin-left: 0.2rem;
 }
-
 .contact-divider {
     margin-top: 8rem;
     border-top: 3px dotted #bbb;

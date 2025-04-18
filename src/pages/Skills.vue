@@ -7,9 +7,9 @@ const props = defineProps({
 <template>
 
     <div class="grid skills-container">
-        <div class="col-12">
+        <!-- <div class="col-12">
             Logo Here + Animation
-        </div>
+        </div> -->
         <div class="col-1 skills-bracket">
             [
         </div>
