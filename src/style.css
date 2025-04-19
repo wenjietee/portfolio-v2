@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
-
 :root {
     /* Fonts */
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -37,6 +35,7 @@ body {
 }
 
 .title {
+    font-family: 'Work Sans', sans-serif;
     text-align: left;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -163,6 +162,12 @@ body {
 }
 
 /* Project */
+.project-hero-preview {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 5px;
+}
 .project-preview {
     width: 29rem;
     height: 19rem;

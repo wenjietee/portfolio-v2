@@ -1,18 +1,27 @@
 <script setup>
+import ProjectModal from './ProjectModal.vue';
+import { ref } from "vue";
+
 const props = defineProps({
     project: Object,
 })
+
+const visible = ref(false);
+
+const showModal = () => {
+    visible.value = true;
+};
 </script>
 
 <template>
     <div class="container grid">
-        <div class="col-12">
-            <img :src="project.preview" :alt="`${project.name}-preview`" class="project-preview" />
+        <div class="col-12" @click="showModal">
+            <img :src="project.preview" :alt="`${project.name}-preview`" class="project-hero-preview" />
         </div>
-        <div class="col-5 project-name">{{ project.name }}</div>
-        <div class="col-3 project-desc">
+        <div class="col-5 project-hero-name">{{ project.name }}</div>
+        <div class="col-3 project-hero-desc">
             <span>
-                {{ project.tags.join(" · ") }}
+                {{ project.label }}
             </span>
         </div>
         <div class="col-4">
@@ -25,6 +34,9 @@ const props = defineProps({
                         <i class="pi pi-github"></i></a>
                 </div>
             </div>
+        </div>
+        <div>
+            <ProjectModal :project="project" v-model:visible="visible" />
         </div>
     </div>
 
