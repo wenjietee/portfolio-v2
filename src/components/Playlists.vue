@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <Card class="about-playlists" style="width: 25rem; overflow: hidden">
+    <Card class="about-playlists" style="width: 45rem; overflow: hidden">
         <template #header>
             Cozy Coding Vibes
         </template>

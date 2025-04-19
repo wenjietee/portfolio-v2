@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
     /* Fonts */
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -21,6 +23,8 @@ html {
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
     margin: 0;
     display: flex;
     place-items: center;
@@ -33,9 +37,18 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
+#splash-name {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
 .title {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    font-weight: 500;
     text-align: left;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -51,6 +64,7 @@ body {
 
 /* Navbar */
 .navbar {
+    text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -114,9 +128,6 @@ body {
     margin: auto;
     margin-top: 1rem;
     padding-top: 1rem;
-}
-.about-playlists.p-card {
-    width: 40rem !important;
 }
 
 /* Playlists */

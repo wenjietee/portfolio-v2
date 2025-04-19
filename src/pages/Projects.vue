@@ -18,7 +18,7 @@ const projectOthers = computed(() => props.projects.filter(x => !x.hero));
 <template>
     <section id="projects">
         <div class="container grid">
-            <div class="col-12 text-6xl font-semibold xl:text-left lg:text-center md:text-center sm:text-center title"
+            <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center title"
                 @mouseenter="animateTitleText" @mouseleave="resetTitleText">Projects</div>
             <div v-for="project in projectHero" class="col-12">
                 <ProjectHero :project="project" />
