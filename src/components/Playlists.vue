@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <Card class="about-playlists" style="width: 45rem; overflow: hidden">
         <template #header>
-            Cozy Coding Vibes
+            Coding Vibes Playlists
         </template>
         <!-- <template #title>Spotify</template>
         <template #subtitle>Spotify</template> -->
