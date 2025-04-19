@@ -41,33 +41,34 @@ const toggle = (event) => {
 <template>
     <nav class="navbar uppercase">
         <div class="hamburger-menu">
-            <button type="button" class="hamburger" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu">
+            <button type="button" class="cursor-point hamburger" @click="toggle" aria-haspopup="true"
+                aria-controls="overlay_menu">
                 <i class="pi pi-bars"></i>
             </button>
             <Menu ref="menu" id="overlay_menu" :model="items" :popup="true" />
         </div>
         <ul class="nav-list">
-            <li class="nav-item ">
+            <li class="cursor-pointer nav-item">
                 <a href="#home">
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Home</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="cursor-pointer nav-item">
                 <a href="#about">
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">About</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="cursor-pointer nav-item">
                 <a href="#projects">
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Projects</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="cursor-pointer nav-item">
                 <a href="#experience">
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Experience</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="cursor-pointer nav-item">
                 <a href="#contact">
                     <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Contact</p>
                 </a>

@@ -89,3 +89,12 @@ export const animateExpSection = (event) => {
         });
     }
 };
+
+export const zoomOnHover = (event, scale) => {
+    const elementClass = event.target;
+
+    gsap.to(elementClass, {
+        scale: scale,
+        ease: 'power2.out',
+    });
+};

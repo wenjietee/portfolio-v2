@@ -25,7 +25,7 @@ const props = defineProps({
                 </div>
             </div>
             <div class="xl:col-4 lg:col-12 md:col-12 sm:col-12">
-                <img :src="about.portrait" alt="profile" id="profile-pic" />
+                <img :src="about.portrait" alt="profile" class="img-cover" id="profile-pic" />
             </div>
             <div class="col-12">
                 <Skills :skills="{ tech_skills: about.tech_skills, art_skills: about.art_skills }" />

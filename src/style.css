@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Main*/
 :root::-webkit-scrollbar {
     display: none;
 }
@@ -65,6 +66,17 @@ body {
     min-height: 70vh;
 }
 
+/* Utility */
+.img-cover {
+    object-fit: cover;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -85,7 +97,6 @@ body {
 }
 
 .nav-item {
-    cursor: pointer;
     margin: -15px 30px 15px 30px;
     max-height: 30px;
 }
@@ -105,7 +116,6 @@ body {
     display: none;
     flex-direction: column;
     gap: 5px;
-    cursor: pointer;
 }
 
 .hamburger > i {
@@ -122,7 +132,6 @@ body {
 #profile-pic {
     width: 30rem;
     height: 30rem;
-    object-fit: cover;
     border-radius: 10px;
     margin-top: 14rem;
 }
@@ -188,8 +197,8 @@ body {
     border-radius: 5px;
     margin: 0 -25px;
 }
+
 .project-card-container {
-    cursor: pointer;
     border-bottom: dotted 3px #bbb;
     margin: 5px;
 }
@@ -202,11 +211,27 @@ body {
 
 .project-link {
     font-weight: bold;
+    color: #f0f0f0;
     text-decoration: none;
-    color: #313945;
 }
 .project-label {
     text-align: center;
+}
+.project-modal {
+    width: 45vw;
+}
+.project-image {
+    height: 50vh;
+}
+.project-modal-content {
+    padding: 2rem;
+}
+
+.modal-close > i {
+    font-size: 1.5rem;
+    background-color: #353535;
+    padding: 0.5rem;
+    border-radius: 25px;
 }
 
 /* Experience */
@@ -324,6 +349,7 @@ body {
         padding: 0 6rem 0 12rem;
     }
 }
+
 @media (max-width: 768px) {
     .hamburger-menu {
         display: flex;
