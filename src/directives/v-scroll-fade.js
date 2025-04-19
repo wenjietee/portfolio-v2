@@ -18,7 +18,7 @@ export default {
             stagger,
             scrollTrigger: {
                 trigger: el,
-                toggleActions: 'play reverse play reverse',
+                toggleActions: 'play none none none',
             },
         });
     },
