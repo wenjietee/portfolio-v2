@@ -7,7 +7,7 @@ const props = defineProps({
 <template>
     <section id="home">
         <div class="container">
-            <h1 id="splash-name">{{ about.name }}</h1>
+            <h1 id="uppercase splash-name">{{ about.name }}</h1>
             <h2>{{ about.title }}</h2>
         </div>
     </section>

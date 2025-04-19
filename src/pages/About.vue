@@ -12,7 +12,7 @@ const props = defineProps({
         <div class="container grid">
             <div class="xl:col-8 lg:col-12 md:col-12 sm:col-12" id="profile-content">
                 <div class="grid">
-                    <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center title"
+                    <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center uppercase title"
                         @mouseenter="animateTitleText" @mouseleave="resetTitleText">About</div>
                     <div class="col-12 text-lg text-left" id="description">
                         <p v-html="about.description"></p>
