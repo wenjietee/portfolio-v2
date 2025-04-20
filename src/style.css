@@ -229,6 +229,10 @@ section {
 .project-image {
     height: 50vh;
 }
+.project-modal {
+    width: 45vw;
+    height: auto;
+}
 .project-modal-content {
     padding: 2rem;
 }
@@ -404,7 +408,6 @@ section {
     }
     .project-modal {
         width: 100vw;
-
         height: 85vh;
     }
     .project-modal-content {
