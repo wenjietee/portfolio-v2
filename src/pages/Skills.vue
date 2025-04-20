@@ -10,15 +10,15 @@ const props = defineProps({
         <!-- <div class="col-12">
             Logo Here + Animation
         </div> -->
-        <div class="col-6 skills-list">
+        <div class="xl:col-6 sm:col-12 skills-list">
             <h3>Tech</h3>
-            <div class="skills-about flex flex-wrap align-items-start justify-content-start gap-2">
+            <div class="skills-about gap-2">
                 <Chip v-for="techSkill in skills.tech_skills" :label="techSkill" class="chip" />
             </div>
         </div>
-        <div class="col-6 skills-list">
+        <div class="xl:col-6 sm:col-12 skills-list">
             <h3>Art</h3>
-            <div class="skills-about flex flex-wrap align-items-start justify-content-end gap-2">
+            <div class="skills-about gap-2">
                 <Chip v-for="artSkill in skills.art_skills" :label="artSkill" class="chip" />
             </div>
         </div>
