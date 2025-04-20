@@ -1,5 +1,6 @@
 {
     "about": {
+        "alias": "WJ.DEV",
         "name": "Tee Wenjie",
         "title": "Creative Full-Stack Technologist",
         "tagline": "Art x Code - I bridge the worlds of pixel and paper to bring unique experiences",
@@ -9,19 +10,19 @@
         "playlists": [
             {
                 "name": "Game Lofi",
-                "image": "/portfolio-v2/media/spotify/",
+                "image": "/portfolio-v2/media/spotify/playlist-thumb-game-lofi.png",
                 "description": "Lofi game vibes",
                 "url": "https://open.spotify.com/playlist/2FMXiQES8v13K0tm2LFDui?si=f2b1bf8f30804e12"
             },
             {
                 "name": "Epic Focus",
-                "image": "/portfolio-v2/media/spotify/",
+                "image": "/portfolio-v2/media/spotify/playlist-thumb-epic-focus.png",
                 "description": "Epic yet ambient tracks",
                 "url": "https://open.spotify.com/playlist/4MKjyFV0bxjcYa82d5vEIn?si=0785c9dc4e654ab4"
             },
             {
                 "name": "Cozy J-Beats",
-                "image": "/portfolio-v2/media/spotify/",
+                "image": "/portfolio-v2/media/spotify/playlist-thumb-cozy-jbeats.png",
                 "description": "Laid-back Japanese tunes",
                 "url": "https://open.spotify.com/playlist/1L2uOSIRMq5RK4tTcX1Bsx?si=42bc778f21814068"
             }
@@ -134,6 +135,17 @@
     ],
     "projects": [
         {
+            "name": "COMING SOON",
+            "label": "",
+            "description": "",
+            "preview": "/portfolio-v2/media/fn/fn-login.png",
+            "images": [],
+            "repo": "",
+            "url": "",
+            "tech": [],
+            "hero": 1
+        },
+        {
             "name": "Food Nomad",
             "label": "Reduce",
             "description": "Food Nomad is an app that advocates the sharing of recipes, lifehacks and excess ingredients within individuals in an effort to reduce food waste.",
@@ -145,7 +157,8 @@
             ],
             "repo": "https://github.com/wenjietee/food-nomad",
             "url": "https://food-nomad.onrender.com/",
-            "tech": ["Express", "NodeJS", "MongoDB"]
+            "tech": ["Express", "NodeJS", "MongoDB"],
+            "hero": 0
         },
         {
             "name": "Missile Command",
@@ -155,11 +168,12 @@
             "images": [
                 "/portfolio-v2/media/mc/mc-1.jpg",
                 "/portfolio-v2/media/mc/mc-2.jpg",
-                "/portfolio-v2/media/mc/mc-3.jpg"
+                "/portfolio-v2/media/mc/mc-4.jpg"
             ],
             "repo": "https://github.com/wenjietee/missile-command",
             "url": "https://wenjietee.github.io/missile-command/",
-            "tech": ["Javascript", "HTML", "CSS"]
+            "tech": ["Javascript", "HTML", "CSS"],
+            "hero": 0
         },
         {
             "name": "What's My GST",
@@ -169,7 +183,8 @@
             "images": ["/portfolio-v2/media/wmg/wmg-1.jpg"],
             "repo": "https://github.com/wenjietee/whats-my-gst",
             "url": "https://wenjietee.github.io/whats-my-gst/",
-            "tech": ["JQuery", "HTML", "CSS"]
+            "tech": ["JQuery", "HTML", "CSS"],
+            "hero": 0
         },
         {
             "name": "Pokegotchi",
@@ -179,7 +194,8 @@
             "images": ["/portfolio-v2/media/pgc/pgc-1.png"],
             "repo": "https://github.com/wenjietee/pokegotchi",
             "url": "https://wenjietee.github.io/pokegotchi/#",
-            "tech": ["JQuery", "HTML", "CSS"]
+            "tech": ["JQuery", "HTML", "CSS"],
+            "hero": 0
         }
     ]
 }
