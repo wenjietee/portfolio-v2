@@ -11,7 +11,8 @@ const props = defineProps({
     <section id="about">
         <div class="container grid">
             <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center uppercase title"
-                @mouseenter="animateTitleText" @mouseleave="resetTitleText">About</div>
+                @mouseenter="animateTitleText" @mouseleave="resetTitleText">
+                About</div>
             <div class="xl:col-6 lg:col-12 md:col-12 sm:col-12" id="profile-content">
                 <div class="text-lg text-left" id="description">
                     <p v-html="about.description"></p>
@@ -27,3 +28,5 @@ const props = defineProps({
         </div>
     </section>
 </template>
+
+xl:text-left lg:text-center md:text-center sm:text-center

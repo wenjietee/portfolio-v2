@@ -1,4 +1,5 @@
 <script setup>
+// import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 import Dialog from 'primevue/dialog';
 import Galleria from 'primevue/galleria';
 const props = defineProps({
@@ -6,6 +7,22 @@ const props = defineProps({
 })
 
 const visible = defineModel("visible")
+
+// const width = ref(window.innerWidth);
+
+// const updateWidth = () => {
+//     width.value = window.innerWidth;
+// };
+
+// onMounted(() => {
+//     window.addEventListener('resize', updateWidth);
+// });
+
+// onBeforeUnmount(() => {
+//     window.removeEventListener('resize', updateWidth);
+// });
+
+// const isMobile = computed(() => width.value < 768);
 
 </script>
 

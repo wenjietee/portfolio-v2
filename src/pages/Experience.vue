@@ -18,7 +18,8 @@ const props = defineProps({
     <section id="experience">
         <div class="container grid page">
             <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center uppercase title"
-                @mouseenter="animateTitleText" @mouseleave="resetTitleText">Experience</div>
+                @mouseenter="animateTitleText" @mouseleave="resetTitleText">
+                Experience</div>
 
             <div class="col-12 accordion-container">
                 <Accordion class="accordion" v-for="(exp, index) in experience" :value="['0']"

@@ -58,11 +58,8 @@ body {
     margin-bottom: 1em;
 }
 
-#about,
-#projects,
-#experience,
-#contact {
-    margin: 0 0 0 -8em;
+section {
+    margin: 0 -8em;
     min-height: 70vh;
 }
 
@@ -159,6 +156,7 @@ body {
 }
 .playlist-img {
     max-height: 10rem;
+    border-radius: 50px;
 }
 .playlist-name {
     font-size: 1rem;
@@ -188,8 +186,8 @@ body {
 
 /* Project */
 .project-hero-preview {
-    width: 75%;
-    height: 75%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -268,7 +266,7 @@ body {
     min-height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     align-items: center;
 }
 .contact-title {
@@ -366,38 +364,49 @@ body {
         background-color: transparent;
     }
     .title {
-        padding: 0 8rem 0 18rem;
+        text-align: center;
     }
     #description {
-        margin-left: 8rem;
-        padding: 0 15rem 0 2rem;
+        text-align: justify !important;
+        font-size: 17px !important;
+        padding: 0 10rem 10rem 10rem;
     }
-    #profile-pic {
+    /* #profile-pic {
         width: 15rem;
         height: 20rem;
         margin-top: 0;
+    } */
+    .project-card-container {
+        padding: 6rem;
+    }
+    .project-hero-preview {
+        width: 110vw;
+    }
+    .project-preview {
+        width: 80vw;
     }
     .accordion-container {
         box-sizing: border-box;
-        padding: 0 6rem 0 12rem;
+        padding: 0 12rem;
+    }
+    .contact-divider {
+        margin-bottom: -8rem;
     }
     .contact-description > * {
-        text-align: center;
-        margin-left: 5rem;
-        padding: 0 7rem 1rem 7rem;
+        text-align: center !important;
+        padding: 1rem 15rem;
     }
     .contact-copyright {
-        margin-left: 5rem;
-        padding: 0 12rem 0 8rem;
+        margin: 0 auto;
+        padding: 1rem 15rem;
+    }
+    .contact-social-container {
+        margin: 0 auto;
     }
     .contact-social-header {
-        text-align: center;
-        margin-left: 5rem;
-        padding: 0 8rem 0 8rem;
+        text-align: center !important;
     }
     .contact-social {
-        justify-content: center;
-        margin-left: 5rem;
-        padding: 0 13rem 0 8rem;
+        padding: 0;
     }
 }

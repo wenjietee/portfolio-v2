@@ -17,7 +17,7 @@ const showModal = () => {
 
 <template>
     <div class="grid cursor-pointer project-card-container" @click="showModal">
-        <div class="col-12 ">
+        <div class="col-12">
             <div class="overflow-hidden">
                 <img :src="project.preview" :alt="`${project.name}-preview`" class="project-preview overflow-hidden"
                     @mouseenter="zoomOnHover($event, 1.2)" @mouseleave="zoomOnHover($event, 1)" />
