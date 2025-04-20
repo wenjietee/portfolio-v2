@@ -1,36 +1,18 @@
 <script setup>
-// import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
+
 import Dialog from 'primevue/dialog';
 import Galleria from 'primevue/galleria';
 const props = defineProps({
     project: Object,
 })
-
 const visible = defineModel("visible")
-
-// const width = ref(window.innerWidth);
-
-// const updateWidth = () => {
-//     width.value = window.innerWidth;
-// };
-
-// onMounted(() => {
-//     window.addEventListener('resize', updateWidth);
-// });
-
-// onBeforeUnmount(() => {
-//     window.removeEventListener('resize', updateWidth);
-// });
-
-// const isMobile = computed(() => width.value < 768);
-
 </script>
 
 
 <template>
-    <Dialog v-model:visible="visible" dismissableMask modal>
+    <Dialog class="project-modal" v-model:visible="visible" dismissableMask modal maximizable :maximized="true">
         <template #container="{ closeCallback }">
-            <div class="grid project-modal">
+            <div class="grid">
                 <div class="col-12" v-if="project.images.length > 0">
                     <Galleria :value="project.images" :circular="true" :showItemNavigators="true"
                         :showThumbnails="false">
@@ -41,9 +23,9 @@ const visible = defineModel("visible")
                     </Galleria>
                 </div>
                 <div class="grid col-12 project-modal-content">
-                    <div class="xl:col-12 text-left project-name">{{ project.name }}</div>
-                    <div class="xl:col-12 text-left project-label">{{ project.tech.join(" / ") }}</div>
-                    <div class="xl:col-12 text-left project-label">{{ project.description }}</div>
+                    <div class="col-12 text-left project-name">{{ project.name }}</div>
+                    <div class="col-12 text-left project-label">{{ project.tech.join(" / ") }}</div>
+                    <div class="col-12 text-left project-label">{{ project.description }}</div>
                     <div class="col-6">
                         <div class="flex flex-wrap align-items-start gap-2">
                             <div>

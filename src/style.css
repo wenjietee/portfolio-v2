@@ -126,6 +126,9 @@ section {
 }
 
 /* About */
+#mobile-profile-pic {
+    display: none;
+}
 #profile-pic {
     width: 32rem;
     height: 34rem;
@@ -142,9 +145,11 @@ section {
 }
 
 /* Playlists */
-.playlists-container {
-    display: flex;
-    flex-direction: row;
+.playlist-web {
+    display: block;
+}
+.playlist-mobile {
+    display: none;
 }
 .playlists-container {
     display: flex;
@@ -175,11 +180,13 @@ section {
 .skills {
     margin-top: 1em;
 }
-
-.skills-bracket {
-    font-size: 10rem;
-    font-weight: 100;
+.skills-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .skills-list {
     margin-top: 3rem;
 }
@@ -218,9 +225,7 @@ section {
 .project-label {
     text-align: center;
 }
-.project-modal {
-    width: 45vw;
-}
+
 .project-image {
     height: 50vh;
 }
@@ -334,7 +339,7 @@ section {
 /* Responsive Design */
 
 @media (min-width: 768px) and (max-width: 1500px) {
-    .nav-list {
+    /* .nav-list {
         margin-right: 9rem;
     }
     .title {
@@ -348,7 +353,7 @@ section {
     .accordion-container {
         box-sizing: border-box;
         padding: 0 6rem 0 12rem;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -369,13 +374,43 @@ section {
     #description {
         text-align: justify !important;
         font-size: 17px !important;
-        padding: 0 10rem 10rem 10rem;
+        padding: 3rem 10rem;
     }
-    /* #profile-pic {
-        width: 15rem;
+    .about-playlists {
+        max-width: 60vw;
+    }
+    .playlist-web {
+        display: none;
+    }
+    .playlist-mobile {
+        display: block;
+    }
+    .playlists-container {
+        flex-direction: column;
+    }
+    #mobile-profile-pic {
+        display: block;
+        margin: 0 auto;
+        width: 25rem;
         height: 20rem;
-        margin-top: 0;
-    } */
+        border-radius: 10px;
+    }
+    #profile-pic {
+        display: none;
+    }
+    .skills-about {
+        max-width: 100vw;
+        margin: 0 9rem;
+    }
+    .project-modal {
+        width: 100vw;
+
+        height: 85vh;
+    }
+    .project-modal-content {
+        margin: 2rem 0;
+        padding: 2rem;
+    }
     .project-card-container {
         padding: 6rem;
     }

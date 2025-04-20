@@ -10,8 +10,6 @@ const props = defineProps({
         <template #header>
             Coding Vibes Playlists
         </template>
-        <!-- <template #title>Spotify</template>
-        <template #subtitle>Spotify</template> -->
         <template #content>
             <div class="playlists-container gap-2">
                 <div class="playlist-item" v-for="playlist in playlists">
@@ -22,6 +20,7 @@ const props = defineProps({
                     <div class="playlist-description">{{ playlist.description }}</div>
                 </div>
             </div>
+
         </template>
     </Card>
 
