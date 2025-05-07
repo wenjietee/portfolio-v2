@@ -59,7 +59,6 @@ body {
 }
 
 section {
-    margin: 0 -8em;
     min-height: 70vh;
 }
 
@@ -361,6 +360,9 @@ section {
 }
 
 @media (max-width: 768px) {
+    section {
+        margin: 0 -8rem;
+    }
     .hamburger-menu {
         display: flex;
     }
