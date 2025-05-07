@@ -93,20 +93,18 @@ onMounted(() => {
         document.body.classList.remove('no-scroll')
     })
 })
-
-
-
 </script>
 
 <template>
     <section id="home">
         <div ref="splashContainer" class="splash-wrapper container">
 
-            <button class="skip-btn" @click="skipSplash">Skip Intro</button>
 
             <section ref="secName">
                 <h1 id="splash-name">{{ about.alias }}</h1>
                 <h2>{{ about.title }}</h2>
+                <button class="skip-btn" @click="skipSplash">Skip Intro</button>
+
             </section>
 
             <section ref="secArtist">
