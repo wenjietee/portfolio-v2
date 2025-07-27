@@ -27,7 +27,7 @@ onBeforeUnmount(() => {
 
         <div class="container grid">
             <div class="col-12 contact-divider"></div>
-            <div class="col-12 text-center uppercase title" @mouseenter="animateTitleText" @mouseleave="resetTitleText">
+            <div class="col-12 text-center lowercase title" @mouseenter="animateTitleText" @mouseleave="resetTitleText">
                 Contact
             </div>
 
@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
             </div>
             <div class="xl:col-3 sm:col-12 contact-copyright">{{ currentTime }} SGT(GMT+8)</div>
 
-            <div class="xl:col-3 sm:col-12 contact-social-container">
+            <div class="xl:col-2 sm:col-12 contact-social-container">
                 <div class="contact-social-header">Socials</div>
                 <ul class="contact-social">
                     <li v-for="social in about.socials" :key="social.name">

@@ -39,7 +39,7 @@ const toggle = (event) => {
 </script>
 
 <template>
-    <nav class="navbar uppercase">
+    <nav class="navbar lowercase ">
         <div class="hamburger-menu">
             <button type="button" class="cursor-point hamburger" @click="toggle" aria-haspopup="true"
                 aria-controls="overlay_menu">

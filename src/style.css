@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@300..700&display=swap');
 
 /* Main*/
 :root::-webkit-scrollbar {
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Figtree', sans-serif;
     font-optical-sizing: auto;
     margin: 0;
     display: flex;
@@ -44,12 +44,12 @@ body {
     text-align: center;
 }
 #splash-name {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 4rem;
     letter-spacing: 3px;
 }
 .title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 4rem;
     letter-spacing: 3px;
     font-weight: 500;
@@ -75,6 +75,7 @@ section {
 
 /* Navbar */
 .navbar {
+    letter-spacing: 3px;
     display: flex;
     justify-content: flex-end;
     position: fixed;

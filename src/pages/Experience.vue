@@ -17,7 +17,7 @@ const props = defineProps({
 <template>
     <section id="experience">
         <div class="container grid page">
-            <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center uppercase title"
+            <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center lowercase title"
                 @mouseenter="animateTitleText" @mouseleave="resetTitleText">
                 Experience</div>
 
