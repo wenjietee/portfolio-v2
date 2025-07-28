@@ -20,47 +20,25 @@ const splitTargetToElements = (target) => {
 };
 
 export const animateNavText = (event) => {
-    const letters = splitTargetToElements(event.target);
-
-    gsap.to(letters, {
-        y: -5,
-        duration: 0.3,
-        ease: 'power3.in',
-        stagger: 0.05,
-    });
+    const letters = event.target;
+    gsap.to(letters, { y: -8, duration: 0.3, ease: 'sine.out' });
 };
 
 export const resetNavText = (event) => {
-    const letters = splitTargetToElements(event.target);
-
-    gsap.to(letters, {
-        y: 0,
-        duration: 0.3,
-        ease: 'power1.inOut',
-        stagger: 0.05,
-    });
+    const letters = event.target;
+    gsap.to(letters, { y: 0, duration: 0.3, ease: 'sine.inOut' });
 };
 
 export const animateTitleText = (event) => {
-    const letters = splitTargetToElements(event.target);
-
-    gsap.to(letters, {
-        y: -5,
-        duration: 0.3,
-        ease: 'power3.in',
-        stagger: 0.05,
-    });
+    return;
+    const letters = event.target;
+    gsap.to(letters, { y: -8, duration: 0.3, ease: 'sine.out' });
 };
 
 export const resetTitleText = (event) => {
-    const letters = splitTargetToElements(event.target);
-
-    gsap.to(letters, {
-        y: 0,
-        duration: 0.3,
-        ease: 'power1.inOut',
-        stagger: 0.05,
-    });
+    return;
+    const letters = event.target;
+    gsap.to(letters, { y: 0, duration: 0.3, ease: 'sine.inOut' });
 };
 
 export const animateExpSection = (event) => {
@@ -74,17 +52,16 @@ export const animateExpSection = (event) => {
 
         gsap.from(expContent, {
             opacity: 0,
-            x: -300,
-            y: 0,
-            ease: 'power4.out',
-            stagger: 0.1,
+            ease: 'sine.inOut',
+            delay: 0.1,
+            stagger: 0.2,
         });
         gsap.from(chips, {
             opacity: 0,
             delay: 0.5,
             x: 0,
             y: 50,
-            ease: 'bounce.out',
+            ease: 'sine.inOut',
             stagger: 0.1,
         });
     }

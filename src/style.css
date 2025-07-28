@@ -11,18 +11,24 @@
     font-weight: 400;
     font-synthesis: none;
     /* Colors */
-    color: #313945;
-    background-color: #f0f0f0;
+	--bg-color: #f7f3eb; 
+    --text-color: #3b2f2f; 
+    --accent-1: #ffad9b; 
+    --accent-2: #9dd9b5; 
+    --highlight: #ffde91
+
     /* Utils */
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    --accordion-toggle-color: black;
+    --accordion-toggle-color: var(--accent-1);
     overflow: hidden;
     overflow-y: scroll;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 .menubar-background {
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
 }
 html {
     scroll-behavior: smooth;
@@ -84,7 +90,7 @@ section {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
 }
 
 .nav-list {
@@ -101,7 +107,7 @@ section {
     font-weight: bold;
     font-size: 1.1rem;
     text-decoration: none;
-    color: #313945;
+    color: var(--text-color);
 }
 
 .nav-item-icon {
@@ -219,7 +225,7 @@ section {
 
 .project-link {
     font-weight: bold;
-    color: #f0f0f0;
+    color: var(--bg-color);
     text-decoration: none;
 }
 .project-label {
@@ -239,7 +245,7 @@ section {
 
 .modal-close > i {
     font-size: 1.5rem;
-    background-color: #353535;
+    background-color: var(--accent-1);
     padding: 0.5rem;
     border-radius: 25px;
 }
@@ -255,7 +261,7 @@ section {
 .accordion-content,
 .accordion-content > * {
     background-color: transparent !important;
-    color: #313945 !important;
+    color: var(--text-color) !important;
     border-radius: 0 !important;
 }
 
@@ -265,9 +271,7 @@ section {
     --p-accordion-header-toggle-icon-active-color: var(
         --accordion-toggle-color
     );
-    --p-accordion-header-toggle-icon-active-hover-color: var(
-        --accordion-toggle-color
-    );
+    --p-accordion-header-toggle-icon-active-hover-color: var(--accent-2);
 }
 
 /* Contact */
@@ -288,7 +292,7 @@ section {
     margin-left: 2rem;
 }
 .contact-social-container {
-    margin-left: -3rem;
+    margin-left: 3.7rem;
 }
 .contact-social-header {
     text-align: right;
@@ -311,7 +315,7 @@ section {
     margin-right: 3rem;
     font-weight: bold;
     text-decoration: none;
-    color: #5a5a5a;
+    color: var(--text-color);
     margin: 5px;
 }
 
@@ -319,7 +323,7 @@ section {
 .url-icon > i {
     font-size: 0.8rem;
     margin: 3px 5px 3px 0;
-    text-shadow: 0px 0px 1px #313945, 0px 0px 1px #313945;
+    text-shadow: 0px 0px 1px var(--text-color), 0px 0px 1px var(--text-color);
 }
 .url-container {
     padding-bottom: 0.8rem;
@@ -328,7 +332,7 @@ section {
     font-weight: bold;
     font-size: 0.9rem;
     text-decoration: none;
-    color: #313945;
+    color: var(--text-color);
 }
 
 .chip {
