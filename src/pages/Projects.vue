@@ -20,7 +20,7 @@ const projectOthers = computed(() => props.projects.filter(x => !x.hero));
         <div class="container grid ">
             <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center lowercase title"
                 @mouseenter="animateTitleText" @mouseleave="resetTitleText">
-                Projects</div>
+                Crafts</div>
             <div v-for="project in projectHero" class="col-12">
                 <ProjectHero :project="project" />
             </div>

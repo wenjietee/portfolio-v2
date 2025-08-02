@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
         <div class="container grid">
             <div class="col-12 contact-divider"></div>
             <div class="col-12 text-center lowercase title" @mouseenter="animateTitleText" @mouseleave="resetTitleText">
-                Contact
+                Hello
             </div>
 
             <div class="xl:col-3 sm:col-12 text-left grid contact-description">

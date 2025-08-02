@@ -9,23 +9,23 @@ const items = ref([
     {
         items: [
             {
-                label: 'Home',
+                label: 'Start',
                 url: '#home',
             },
             {
-                label: 'About',
+                label: 'Bio',
                 url: '#about',
             },
             {
-                label: 'Projects',
+                label: 'Crafts',
                 url: '#projects',
             },
             {
-                label: 'Experience',
+                label: 'Journey',
                 url: '#experience',
             },
             {
-                label: 'Contact',
+                label: 'Hello',
                 url: '#contact',
             }
         ]
@@ -50,27 +50,27 @@ const toggle = (event) => {
         <ul class="nav-list">
             <li class="cursor-pointer nav-item">
                 <a href="#home">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Home</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Start</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#about">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">About</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Bio</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#projects">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Projects</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Crafts</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#experience">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Experience</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Journey</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#contact">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Contact</p>
+                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Hello</p>
                 </a>
             </li>
             <!-- <li class="nav-item">

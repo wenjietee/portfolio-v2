@@ -25,11 +25,11 @@ onMounted(() => {
     })
 
     timeline
-        // .fromTo(
-        //     titleRef.value,
-        //     { opacity: 0, y: 50 },
-        //     { opacity: 1, y: 0, duration: 1 }
-        // )
+        .fromTo(
+            titleRef.value,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 1 }
+        )
         .fromTo(
             sketchRef.value.querySelector('path'),
             { strokeDashoffset: 400 },
@@ -40,7 +40,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <section class="splash-stage" ref="splashRef">
+    <section class="splash-stage" id="home" ref="splashRef">
         <div class="splash-content">
             <div id="splash-intro">
                 <h1 class="splash-title" ref="titleRef">Hi, I’m WJ – A Creative Technologist</h1>
@@ -49,10 +49,18 @@ onMounted(() => {
                     <path d="M20 130 Q150 20 280 130" stroke-dasharray="400" stroke-dashoffset="400" />
                 </svg>
             </div>
-            <div id="splash-artist" ref="artistRef"></div>
-            <div id="splash-3d" ref="modelRef"></div>
-            <div id="splash-game" ref="gameRef"></div>
-            <div id="splash-techart" ref="techartRef"></div>
+            <div id="splash-artist" ref="artistRef">
+
+            </div>
+            <div id="splash-3d" ref="modelRef">
+
+            </div>
+            <div id="splash-game" ref="gameRef">
+
+            </div>
+            <div id="splash-techart" ref="techartRef">
+
+            </div>
         </div>
     </section>
 </template>

@@ -12,7 +12,7 @@ const props = defineProps({
         <div class="container grid">
             <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center lowercase title"
                 @mouseenter="animateTitleText" @mouseleave="resetTitleText">
-                About</div>
+                Bio</div>
             <div class="xl:col-6 lg:col-12 md:col-12 sm:col-12" id="profile-content">
                 <img :src="about.portrait" alt="profile" class="img-cover" id="mobile-profile-pic" />
                 <div class="text-lg text-left" id="description">
