@@ -49,11 +49,7 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-#splash-name {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 4rem;
-    letter-spacing: 3px;
-}
+
 .title {
     font-family: 'Quicksand', sans-serif;
     font-size: 4rem;
@@ -127,9 +123,32 @@ section {
 }
 
 /* Splash */
-#splash-name {
-    font-size: 10vw;
+.splash-stage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color, #fdf6e3);
+    color: var(--text-color, #1a1c2c);
+    position: relative;
+    overflow: hidden;
 }
+
+.splash-content {
+    text-align: center;
+}
+
+.splash-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.splash-sketch {
+    width: 100%;
+    max-width: 500px;
+    stroke: var(--accent-1, #ff6c6b);
+}
+
 
 /* About */
 #mobile-profile-pic {

@@ -29,5 +29,3 @@ const props = defineProps({
         </div>
     </section>
 </template>
-
-xl:text-left lg:text-center md:text-center sm:text-center
