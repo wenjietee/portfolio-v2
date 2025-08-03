@@ -1,6 +1,6 @@
 <script setup>
 import { animateTitleText, resetTitleText } from '../utils/animUtils';
-import Playlists from '../components/Playlists.vue';
+// import Playlists from '../components/Playlists.vue';
 import Skills from './Skills.vue';
 const props = defineProps({
     about: Object
