@@ -6,6 +6,7 @@ import Projects from './pages/Projects.vue';
 import Splash from './pages/Splash.vue';
 import Navbar from './components/Navbar.vue';
 import Contact from './pages/Contact.vue';
+import Paintbrush from './components/Paintbrush.vue';
 
 const data = ref(null)
 
@@ -24,6 +25,7 @@ onMounted(async () => {
   <div v-if="data">
 
     <Navbar />
+    <Paintbrush />
     <Splash v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
     <About :about="data.about" v-scroll-fade="{ duration: 1, x: 0, y: 30, start: 'top center', stagger: 0.01 }" />
     <Projects :projects="data.projects"
