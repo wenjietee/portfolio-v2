@@ -174,39 +174,6 @@ section {
 #description {
     margin-top: -1.5rem;
 }
-.about-playlists {
-    margin: auto;
-    margin-top: 3rem;
-    padding-top: 1rem;
-}
-
-/* Playlists */
-.playlist-web {
-    display: block;
-}
-.playlist-mobile {
-    display: none;
-}
-.playlists-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.playlist-item {
-    margin: 0 3rem;
-}
-.playlist-img {
-    max-height: 10rem;
-    border-radius: 50px;
-}
-.playlist-name {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-.playlist-description {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-}
 
 /* Skills */
 .skills-container {
@@ -416,18 +383,6 @@ section {
         text-align: justify !important;
         font-size: 17px !important;
         padding: 3rem 10rem;
-    }
-    .about-playlists {
-        max-width: 60vw;
-    }
-    .playlist-web {
-        display: none;
-    }
-    .playlist-mobile {
-        display: block;
-    }
-    .playlists-container {
-        flex-direction: column;
     }
     #mobile-profile-pic {
         display: block;

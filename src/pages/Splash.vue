@@ -7,12 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const splashRef = ref()
 const titleRef = ref()
-const sketchRef = ref()
-const artistRef = ref()
-const modelRef = ref()
-const gameRef = ref()
-const techartRef = ref()
-
+const dioRef = ref()
 
 onMounted(() => {
     const timeline = gsap.timeline({
@@ -51,16 +46,7 @@ onMounted(() => {
                     <path d="M20 130 Q150 20 280 130" stroke-dasharray="400" stroke-dashoffset="400" />
                 </svg> -->
             </div>
-            <div id="splash-artist" ref="artistRef">
-
-            </div>
-            <div id="splash-3d" ref="modelRef">
-
-            </div>
-            <div id="splash-game" ref="gameRef">
-
-            </div>
-            <div id="splash-techart" ref="techartRef">
+            <div id="splash-diorama" ref="dioRef">
 
             </div>
         </div>

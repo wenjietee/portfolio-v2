@@ -7,26 +7,6 @@
         "description": "Starting my journey in crafting 3D assets for simulators and terrains. After a spark of passion for creating procedural modelling scripts for large-scale terrains, I am driven to bridge the domains of design and code to deliver solutions to transform and innovate lives and industries. <br/><br/> My unique blend of technical expertise and artistic creativity leads to solutions that are functional and visually appealing.",
         "portrait": "/portfolio-v2/media/portrait/profile.jpg",
         "email": "wenjiet.dev@gmail.com",
-        "playlists": [
-            {
-                "name": "Game Lofi",
-                "image": "/portfolio-v2/media/spotify/playlist-thumb-game-lofi.png",
-                "description": "Lofi game vibes",
-                "url": "https://open.spotify.com/playlist/2FMXiQES8v13K0tm2LFDui?si=f2b1bf8f30804e12"
-            },
-            {
-                "name": "Epic Focus",
-                "image": "/portfolio-v2/media/spotify/playlist-thumb-epic-focus.png",
-                "description": "Epic yet ambient tracks",
-                "url": "https://open.spotify.com/playlist/4MKjyFV0bxjcYa82d5vEIn?si=0785c9dc4e654ab4"
-            },
-            {
-                "name": "Cozy J-Beats",
-                "image": "/portfolio-v2/media/spotify/playlist-thumb-cozy-jbeats.png",
-                "description": "Laid-back Japanese tunes",
-                "url": "https://open.spotify.com/playlist/1L2uOSIRMq5RK4tTcX1Bsx?si=42bc778f21814068"
-            }
-        ],
         "socials": [
             { "name": "Github", "url": "https://github.com/wenjietee" },
             {

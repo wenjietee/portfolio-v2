@@ -1,6 +1,5 @@
 <script setup>
 import { animateTitleText, resetTitleText } from '../utils/animUtils';
-// import Playlists from '../components/Playlists.vue';
 import Skills from './Skills.vue';
 const props = defineProps({
     about: Object
@@ -18,7 +17,6 @@ const props = defineProps({
                 <div class="text-lg text-left" id="description">
                     <p v-html="about.description"></p>
                 </div>
-                <!-- <Playlists :playlists="about.playlists" /> -->
             </div>
             <div class="xl:col-6 lg:col-12 md:col-12 sm:col-12">
                 <img :src="about.portrait" alt="profile" class="img-cover" id="profile-pic" />
