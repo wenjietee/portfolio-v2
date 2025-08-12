@@ -45,7 +45,7 @@ const handleMouseLeave = () => {
 
 <template>
     <div class="card-wrapper">
-        <div ref="cardRef" class="three-d-card" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave">
+        <div ref="cardRef" class="pers" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave">
             <slot></slot>
         </div>
     </div>

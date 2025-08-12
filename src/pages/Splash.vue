@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import PerspectiveLayer from '../components/PerspectiveLayer.vue'
+import TranslateLayer from '../components/TranslateLayer.vue'
 gsap.registerPlugin(ScrollTrigger)
 
 const splashRef = ref()
@@ -15,9 +16,9 @@ const dioRef = ref()
     <section class="splash-stage" id="home" ref="splashRef">
         <div class="splash-content">
             <div id="splash-intro" ref="titleRef">
-                <PerspectiveLayer>
+                <TranslateLayer>
                     <h1 class="splash-headline">wj.art/code</h1>
-                </PerspectiveLayer>
+                </TranslateLayer>
                 <h1 class="splash-title">creative technologist</h1>
             </div>
             <div id="splash-diorama" ref="dioRef">
