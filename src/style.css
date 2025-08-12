@@ -96,10 +96,11 @@ section {
 .pers:hover {
 }
 
-.trans {
+.translate-element {
     position: relative;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 /* Navbar */
 .navbar {
     letter-spacing: 3px;
@@ -149,7 +150,6 @@ section {
 
 /* Splash */
 .splash-stage {
-    font-family: var(--splash-font);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -166,6 +166,7 @@ section {
 }
 
 .splash-headline {
+    font-family: var(--splash-font);
     font-size: 10rem;
     margin-bottom: 2rem;
     letter-spacing: 0.5rem;

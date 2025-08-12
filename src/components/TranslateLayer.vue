@@ -1,39 +1,60 @@
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted, onBeforeUnmount } from 'vue'
 
-const cardRef = ref(null)
-const translation = reactive({
+const layerRef = ref(null)
+const mousePosition = reactive({
     x: 0,
     y: 0
 })
 
+const props = defineProps({
+    speed: {
+        type: Number,
+        default: 1
+    }
+})
+
+
 const handleMouseMove = (e) => {
-    if (!cardRef.value) return
 
-    const bounds = cardRef.value.getBoundingClientRect()
-    const mouseX = e.clientX - bounds.left
-    const mouseY = e.clientY - bounds.top
+    mousePosition.x = (e.clientX - window.innerWidth / 2)
+    mousePosition.y = (e.clientY - window.innerHeight / 2)
 
-    // Simple percentage-based translation (max 30px movement)
-    translation.x = ((mouseX / bounds.width) - 0.5) * 30
-    translation.y = ((mouseY / bounds.height) - 0.5) * 30
+    if (layerRef.value) {
 
-    cardRef.value.style.transform = `translate(${-translation.x}px, ${translation.y}px)`
+        const translateX = -mousePosition.x * 0.02 * props.speed
+        const translateY = -mousePosition.y * 0.02 * props.speed
+
+        layerRef.value.style.transform = `translate(${translateX}px, ${translateY}px)`
+    }
 }
 
-const handleMouseLeave = () => {
-    if (!cardRef.value) return
-
-    translation.x = 0
-    translation.y = 0
-    cardRef.value.style.transform = 'translate(0px, 0px)'
+const resetPosition = () => {
+    if (layerRef.value) {
+        layerRef.value.style.transform = 'translate(0px, 0px)'
+    }
 }
+
+onMounted(() => {
+    window.addEventListener('mousemove', handleMouseMove)
+})
+
+onBeforeUnmount(() => {
+    window.removeEventListener('mousemove', handleMouseMove)
+})
 </script>
 
 <template>
     <div class="card-wrapper">
-        <div ref="cardRef" class="translate-element" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave">
+        <div ref="layerRef" class="translate-element" @mouseleave="resetPosition">
             <slot></slot>
         </div>
     </div>
 </template>
+<style scoped>
+.translate-element {
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+}
+</style>
