@@ -79,6 +79,23 @@ section {
 .overflow-hidden {
     overflow: hidden !important;
 }
+.pers-wrapper {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+.pers {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    background: var(--accent-1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pers:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
 
 /* Navbar */
 .navbar {
@@ -137,7 +154,7 @@ section {
     background: var(--bg-color, #fdf6e3);
     color: var(--text-color, #1a1c2c);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .splash-content {
@@ -145,7 +162,7 @@ section {
 }
 
 .splash-headline {
-    font-size: 8rem;
+    font-size: 10rem;
     margin-bottom: 2rem;
     letter-spacing: 0.5rem;
 }
