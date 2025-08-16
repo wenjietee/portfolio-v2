@@ -15,8 +15,8 @@ const props = defineProps({
                 Bio</div>
             <div class="xl:col-6 lg:col-12 md:col-12 sm:col-12" id="profile-content">
                 <img :src="about.portrait" alt="profile" class="img-cover" id="mobile-profile-pic" />
-                <div class="text-lg text-left" id="description">
-                    <p v-html="about.description"></p>
+                <div class="text-lg text-left" id="description-container">
+                    <p v-html="about.description" id="description-content"></p>
                 </div>
             </div>
             <div class="xl:col-6 lg:col-12 md:col-12 sm:col-12">

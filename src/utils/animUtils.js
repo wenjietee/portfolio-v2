@@ -1,23 +1,5 @@
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-/**
- * Util to wrap each letter into a span element for animation
- * @param {EventTarget} event.target event target
- * @returns Nodelist of '.letter' elements
- */
-const splitTargetToElements = (target) => {
-    if (!target.classList.contains('split')) {
-        const lettersHTML = target.innerText
-            .split('')
-            .map((letter) => `<span class="letter">${letter}</span>`)
-            .join('');
-        target.innerHTML = lettersHTML;
-        target.classList.add('split');
-    }
-
-    return target.querySelectorAll('.letter');
-};
+import SplitType from 'split-type';
 
 export const animateNavText = (event) => {
     const letters = event.target;

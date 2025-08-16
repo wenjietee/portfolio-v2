@@ -192,8 +192,12 @@ section {
     margin-left: 12rem;
     border-radius: 10px;
 }
-#description {
+#description-container {
     margin-top: -1.5rem;
+}
+
+#description-content {
+    font-size: 1.3rem;
 }
 
 /* Skills */
