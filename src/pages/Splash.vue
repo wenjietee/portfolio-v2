@@ -19,15 +19,15 @@ const handleMouseMove = (e) => {
 
     if (titleRef.value && dioRef.value) {
         gsap.to(titleRef.value, {
-            x: -mouseX.value * 2,
-            y: -mouseY.value * 2,
+            x: -mouseX.value * 1,
+            y: -mouseY.value * 1,
             duration: 0.5,
             ease: 'power2.out'
         })
 
         gsap.to(dioRef.value, {
-            x: -mouseX.value * 1,
-            y: -mouseY.value * 1,
+            x: -mouseX.value * 0.2,
+            y: -mouseY.value * 0.2,
             duration: 0.8,
             ease: 'power2.out'
         })

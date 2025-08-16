@@ -87,7 +87,6 @@ section {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.1s ease;
-    padding: 2rem;
     /* background: var(--accent-1); */
     /* border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
