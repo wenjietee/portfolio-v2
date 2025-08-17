@@ -16,11 +16,11 @@
     --title-font: 'Quicksand', sans-serif;
     --body-font: 'Figtree', sans-serif;
     /* Colors */
-    --bg-color: #f7f3eb;
-    --text-color: #3b2f2f;
-    --accent-1: #ff623f;
-    --accent-2: #9dd9b5;
-    --highlight: #ffde91;
+    --bg-color: #1a1c2c;
+    --text-color: #c4c4c4;
+    --accent-1: #ff6c6b;
+    --accent-2: #94d2bd;
+    --highlight: #ffd580;
 
     /* Utils */
     text-rendering: optimizeLegibility;
@@ -121,6 +121,13 @@ section {
 .chip {
     height: 1.5rem;
     font-size: 0.9rem;
+}
+
+.p-chip {
+    --p-chip-background: var(--accent-2);
+}
+.p-chip-label {
+    color: var(--bg-color);
 }
 
 .letter {
