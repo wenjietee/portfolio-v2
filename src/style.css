@@ -102,6 +102,10 @@ section {
     transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /* Misc */
 .url-icon > i {
     font-size: 0.8rem;
@@ -133,7 +137,6 @@ section {
 .letter {
     display: inline-block;
 }
-
 .active,
 .char {
     color: var(--accent-1);

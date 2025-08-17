@@ -8,15 +8,15 @@ export const animateNavText = (event) => {
         .to('.char', {
             x: 100,
             stagger: 0,
-            delay: 0.1,
-            duration: 0.2,
+            delay: 0.05,
+            duration: 0.1,
             ease: 'sine.out',
         })
         .from('.char', {
             x: -20,
             stagger: 0.05,
             delay: 0,
-            duration: 0.2,
+            duration: 0.3,
             ease: 'sine.out',
         });
 };
