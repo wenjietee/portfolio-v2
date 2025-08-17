@@ -2,7 +2,6 @@
 import { ref } from 'vue';
 import { animateNavText, resetNavText } from '../utils/animUtils';
 import Menu from 'primevue/menu';
-// import Button from 'primevue/button';
 
 const menu = ref();
 const items = ref([
@@ -37,6 +36,15 @@ const toggle = (event) => {
 };
 
 
+const handleActiveNav = (event) => {
+    const navItems = document.querySelectorAll('.nav-text')
+    navItems.forEach(item => {
+        item.classList.remove('active')
+    })
+    event.target.classList.add('active')
+
+}
+
 </script>
 
 <template>
@@ -51,27 +59,32 @@ const toggle = (event) => {
         <ul class="nav-list">
             <li class="cursor-pointer nav-item">
                 <a href="#home">
-                    <p class="nav-text" @click="" @mouseenter="animateNavText" @mouseleave="resetNavText">Start</p>
+                    <p class="nav-text" @click="handleActiveNav" @mouseenter="animateNavText"
+                        @mouseleave="resetNavText">Start</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#about">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Bio</p>
+                    <p class="nav-text" @click="handleActiveNav" @mouseenter="animateNavText"
+                        @mouseleave="resetNavText">Bio</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#projects">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Crafts</p>
+                    <p class="nav-text" @click="handleActiveNav" @mouseenter="animateNavText"
+                        @mouseleave="resetNavText">Crafts</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#experience">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Journey</p>
+                    <p class="nav-text" @click="handleActiveNav" @mouseenter="animateNavText"
+                        @mouseleave="resetNavText">Journey</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
                 <a href="#contact">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Hello</p>
+                    <p class="nav-text" @click="handleActiveNav" @mouseenter="animateNavText"
+                        @mouseleave="resetNavText">Hello</p>
                 </a>
             </li>
             <!-- <li class="nav-item">

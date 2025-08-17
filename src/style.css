@@ -18,7 +18,7 @@
     /* Colors */
     --bg-color: #f7f3eb;
     --text-color: #3b2f2f;
-    --accent-1: #ffad9b;
+    --accent-1: #ff623f;
     --accent-2: #9dd9b5;
     --highlight: #ffde91;
 
@@ -125,6 +125,11 @@ section {
 
 .letter {
     display: inline-block;
+}
+
+.active,
+.char {
+    color: var(--accent-1);
 }
 
 /* Navbar */

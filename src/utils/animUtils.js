@@ -6,14 +6,14 @@ export const animateNavText = (event) => {
     const timeline = gsap.timeline();
     timeline
         .to('.char', {
-            x: -100,
+            x: 100,
             stagger: 0,
             delay: 0.1,
-            duration: 0.3,
+            duration: 0.2,
             ease: 'sine.out',
         })
         .from('.char', {
-            x: 20,
+            x: -20,
             stagger: 0.05,
             delay: 0,
             duration: 0.2,
