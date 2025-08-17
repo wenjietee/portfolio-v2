@@ -2,13 +2,28 @@ import { gsap } from 'gsap';
 import SplitType from 'split-type';
 
 export const animateNavText = (event) => {
-    const letters = event.target;
-    gsap.to(letters, { y: -8, duration: 0.3, ease: 'sine.out' });
+    new SplitType(event.target);
+    const timeline = gsap.timeline();
+    timeline
+        .to('.char', {
+            x: -100,
+            stagger: 0,
+            delay: 0.1,
+            duration: 0.3,
+            ease: 'sine.out',
+        })
+        .from('.char', {
+            x: 20,
+            stagger: 0.05,
+            delay: 0,
+            duration: 0.2,
+            ease: 'sine.out',
+        });
 };
 
 export const resetNavText = (event) => {
-    const letters = event.target;
-    gsap.to(letters, { y: 0, duration: 0.3, ease: 'sine.inOut' });
+    const letters = new SplitType(event.target);
+    letters.revert();
 };
 
 export const animateTitleText = (event) => {

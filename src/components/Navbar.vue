@@ -36,6 +36,7 @@ const toggle = (event) => {
     menu.value.toggle(event);
 };
 
+
 </script>
 
 <template>
@@ -50,7 +51,7 @@ const toggle = (event) => {
         <ul class="nav-list">
             <li class="cursor-pointer nav-item">
                 <a href="#home">
-                    <p class="nav-text" @mouseenter="animateNavText" @mouseleave="resetNavText">Start</p>
+                    <p class="nav-text" @click="" @mouseenter="animateNavText" @mouseleave="resetNavText">Start</p>
                 </a>
             </li>
             <li class="cursor-pointer nav-item">
