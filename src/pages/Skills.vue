@@ -7,9 +7,6 @@ const props = defineProps({
 <template>
 
     <div class="grid skills-container">
-        <!-- <div class="col-12">
-            Logo Here + Animation
-        </div> -->
         <div class="xl:col-6 sm:col-12 skills-list">
             <h3>Tech</h3>
             <div class="skills-about gap-2">

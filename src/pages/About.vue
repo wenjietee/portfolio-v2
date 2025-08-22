@@ -1,5 +1,6 @@
 <script setup>
 import PerspectiveLayer from '../components/PerspectiveLayer.vue';
+import TranslateLayer from '../components/TranslateLayer.vue';
 import { animateTitleText, resetTitleText } from '../utils/animUtils';
 import Skills from './Skills.vue';
 const props = defineProps({
@@ -20,9 +21,11 @@ const props = defineProps({
                 </div>
             </div>
             <div class="xl:col-6 lg:col-12 md:col-12 sm:col-12">
-                <PerspectiveLayer>
-                    <img :src="about.portrait" alt="profile" class="img-cover" id="profile-pic" />
-                </PerspectiveLayer>
+                <TranslateLayer speed="0.8">
+                    <PerspectiveLayer>
+                        <img :src="about.portrait" alt="profile" class="img-cover" id="profile-pic" />
+                    </PerspectiveLayer>
+                </TranslateLayer>
             </div>
             <div class="col-12">
                 <Skills :skills="{ tech_skills: about.tech_skills, art_skills: about.art_skills }" />
