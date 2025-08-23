@@ -9,9 +9,8 @@ const props = defineProps({
 })
 
 
-// sort projects into hero and others
-const projectHero = computed(() => props.projects.filter(x => x.hero));
-const projectOthers = computed(() => props.projects.filter(x => !x.hero));
+
+const projects = computed(() => props.projects);
 
 </script>
 
@@ -21,9 +20,7 @@ const projectOthers = computed(() => props.projects.filter(x => !x.hero));
             <div class="col-12 xl:text-left lg:text-center md:text-center sm:text-center lowercase title"
                 @mouseenter="animateTitleText" @mouseleave="resetTitleText">
                 Crafts</div>
-            <!-- <div v-for="project in projectHero" class="col-12">
-                <ProjectHero :project="project" />
-            </div> -->
+
             <div class="col-12">
                 <div class="grid">
                     <div v-for="project in projectOthers" class="xl:col-4 lg:col-12 md:col-12 sm:col-12">

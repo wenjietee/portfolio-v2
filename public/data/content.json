@@ -122,8 +122,7 @@
             "images": [],
             "repo": "",
             "url": "",
-            "tech": [],
-            "hero": 1
+            "tech": []
         },
         {
             "name": "Food Nomad",
@@ -137,8 +136,7 @@
             ],
             "repo": "https://github.com/wenjietee/food-nomad",
             "url": "https://food-nomad.onrender.com/",
-            "tech": ["Express", "NodeJS", "MongoDB"],
-            "hero": 0
+            "tech": ["Express", "NodeJS", "MongoDB"]
         },
         {
             "name": "Missile Command",
@@ -152,8 +150,7 @@
             ],
             "repo": "https://github.com/wenjietee/missile-command",
             "url": "https://wenjietee.github.io/missile-command/",
-            "tech": ["Javascript", "HTML", "CSS"],
-            "hero": 0
+            "tech": ["Javascript", "HTML", "CSS"]
         },
         {
             "name": "What's My GST",
@@ -163,8 +160,7 @@
             "images": ["/portfolio-v2/media/wmg/wmg-1.jpg"],
             "repo": "https://github.com/wenjietee/whats-my-gst",
             "url": "https://wenjietee.github.io/whats-my-gst/",
-            "tech": ["JQuery", "HTML", "CSS"],
-            "hero": 0
+            "tech": ["JQuery", "HTML", "CSS"]
         },
         {
             "name": "Pokegotchi",
@@ -174,8 +170,7 @@
             "images": ["/portfolio-v2/media/pgc/pgc-1.png"],
             "repo": "https://github.com/wenjietee/pokegotchi",
             "url": "https://wenjietee.github.io/pokegotchi/#",
-            "tech": ["JQuery", "HTML", "CSS"],
-            "hero": 0
+            "tech": ["JQuery", "HTML", "CSS"]
         }
     ]
 }

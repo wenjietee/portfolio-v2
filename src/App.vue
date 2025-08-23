@@ -6,7 +6,6 @@ import Projects from './pages/Projects.vue';
 import Splash from './pages/Splash.vue';
 import Navbar from './components/Navbar.vue';
 import Contact from './pages/Contact.vue';
-import Paintbrush from './components/Paintbrush.vue';
 
 const data = ref(null)
 
